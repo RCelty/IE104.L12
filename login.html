@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <!-- bootstrap, css -->
+
+    <link rel="stylesheet" href="./asset/reset.css" />
+    <link rel="stylesheet" href="./asset/setup.css" />
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./components/login/style.css" />
+    <link rel="stylesheet" href="./components/header/style.css" />
+    <link rel="stylesheet" href="./components/footer/style.css" />
+  </head>
+  <body class="bg-b">
+    <!-- header -->
+
+    <div class="header bg-d2">
+      <h1 class="c-white txt-c fw-b pt-md">WELCOME TO ZTEAM</h1>
+    </div>
+
+    <!-- body -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+      data-pause="none"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100 img-lg img-d"
+            src="./images/wz-social-share.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 img-lg img-d"
+            src="./images/hinh-nen-pubg-chon-loc-dep-mat-cho-dien-thoai-va-may-tinh-background-800x450.jpg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 img-lg img-d"
+            src="./images/91ZmgFvglpL.png"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mycontainer">
+      <div class="option-tabs">
+        <base target="frame" />
+        <ul>
+          <li class="login-tab large-size mr-sm">
+            <a href="./loginform.html" class="mylink active">Login</a>
+          </li>
+          <li class="register-tab large-size">
+            <a href="./signupform.html" class="mylink">Sign up</a>
+          </li>
+        </ul>
+        <div></div>
+      </div>
+      <div class="form">
+        <iframe
+          name="frame"
+          frameborder="0"
+          scrolling="no"
+          src="./loginform.html"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer bg-d2">
+      <div class="row">
+        <div class="brand col-4 mt-sm txt-c">
+          <span class="c-white large-size fw-b">ZTEAM</span><br />
+          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+        </div>
+        <div class="col-3 mt-sm">
+          <span class="c-white medium-size">Learn More</span><br />
+          <ul class="pt-xs">
+            <li><a>About Us</a></li>
+            <li><a>Terms & Condition</a></li>
+            <li><a>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-3 c-white mt-sm">
+          <span class="c-white medium-size">Follow Us</span><br />
+          <ul class="pt-xs">
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-2 c-white mt-sm">
+          <span class="c-white medium-size">Orther Site</span><br />
+          <ul class="pt-xs">
+            <li><a>PlayStation</a></li>
+            <li><a>ZForum</a></li>
+            <li><a>ZRealms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 txt-c c-dark-1">
+          © 2020 Copyright: zteamgameheaven.com
+        </div>
+      </div>
+    </div>
+
+    <!--jquery -->
+
+    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let links = document.querySelectorAll(".mylink");
+      if (links.length > 0) {
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            activeLink = document.querySelector(".active");
+            console.log(activeLink);
+            if (activeLink != null) {
+              activeLink.setAttribute("class", "mylink");
+            }
+            link.setAttribute("class", "mylink active");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
