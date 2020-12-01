@@ -52,6 +52,9 @@
 .bg-yl {
   background: rgb(230, 180, 0);
 }
+.bg-aqua {
+  background-color: aqua;
+}
 
 /*-- important style --*/
 .gap-md,
@@ -335,6 +338,10 @@
 .mycancelbutton span {
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.myrow {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* image */
