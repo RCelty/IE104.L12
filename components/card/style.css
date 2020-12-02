@@ -1,0 +1,28 @@
+.mycard {
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+.mycard .mycard-img {
+  height: 235px;
+  width: 100%;
+}
+.mycard .mycard-title {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+}
+.mycard .mycard-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+}
