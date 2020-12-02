@@ -1,5 +1,9 @@
 .mycard {
-  height: 350px;
+  margin: 10px 0;
+}
+.mycard-inner {
+  height: 400px;
+  position: relative;
   overflow: hidden;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -8,21 +12,76 @@
   font-size: 14px;
   line-height: 1.4;
   padding-bottom: 10px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.mycard .mycard-img {
+.mycard-inner .mycard-img {
   height: 235px;
   width: 100%;
 }
-.mycard .mycard-title {
+.mycard-inner .mycard-title {
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 90%;
 }
-.mycard .mycard-text {
+.mycard-inner .mycard-text {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 90%;
+}
+.mycard-inner:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 5px solid gray;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.mycard-inner button {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #28a745;
+  color: #28a745;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: background ease-in 0.25s;
+  transition: background ease-in 0.25s;
+}
+.mycard-inner button:hover {
+  background: #0069d9;
+  color: #fff;
+}
+.mycard_overlay {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+  opacity: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.mycard_overlay h2 {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.mycard_overlay i {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.5em;
 }

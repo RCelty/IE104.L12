@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./components/header/style.css" />
     <link rel="stylesheet" href="./components/footer/style.css" />
     <link rel="stylesheet" href="./components/card/style.css" />
+
+    <!-- jquery -->
+    <script src="./asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="./JQuery/jquery.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -23,7 +27,9 @@
         <div class="heading-right c-white">
           <span class="username">Đỗ Đình Ngọc</span> |
           <span class="fa-2x">
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-shopping-cart">
+              <span class="counter"></span>
+            </i>
           </span>
         </div>
       </div>
@@ -102,17 +108,17 @@
     <!-- body -->
     <div class="body">
       <div class="row myrow">
-        <div class="col-lg-4 col-sm-6 txt-c">
+        <div class="col-lg-3 col-sm-6 txt-c">
           <span>menu</span>
         </div>
-        <div class="page-content col-lg-8 col-sm-6">
+        <div class="page-content col-lg-9 col-sm-6">
           <div class="section">
             <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
               <span>Action game</span>
             </div>
             <div class="row myrow">
-              <div class="col-lg-4 col-sm-12">
-                <div class="mycard">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
                   <img
                     class="mycard-img"
                     src="./images/91ZmgFvglpL.png"
@@ -128,6 +134,13 @@
                       Studio sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
                     </p>
                     <p class="mycard-text">$69,00</p>
+                    <button>
+                      <span class="fas fa-shopping-cart"></span> Add to cart
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
                   </div>
                 </div>
               </div>
