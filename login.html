@@ -17,7 +17,7 @@
   <body class="bg-b">
     <!-- header -->
 
-    <div class="header bg-d2">
+    <div class="loginheader bg-d2">
       <h1 class="c-white txt-c fw-b pt-md">WELCOME TO ZTEAM</h1>
     </div>
 
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="mycontainer">
-      <div class="option-tabs">
+      <!-- <div class="option-tabs">
         <base target="frame" />
         <ul>
           <li class="login-tab large-size mr-sm">
@@ -73,13 +73,108 @@
           scrolling="no"
           src="./loginform.html"
         ></iframe>
+      </div> -->
+      <div class="login-wrap">
+        <div class="login-html">
+          <input
+            id="tab-1"
+            type="radio"
+            name="tab"
+            class="sign-in"
+            checked
+          /><label for="tab-1" class="tab">Sign In</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+            for="tab-2"
+            class="tab"
+            >Sign Up</label
+          >
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="user" class="label">Username:</label>
+                <input id="user" type="text" class="input" />
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password:</label>
+                <input
+                  id="pass"
+                  type="password"
+                  class="input"
+                  data-type="password"
+                />
+              </div>
+              <div class="group">
+                <input id="check" type="checkbox" class="check" checked />
+                <label for="check"
+                  ><span class="icon"></span> Keep me Signed in</label
+                >
+              </div>
+              <div class="group">
+                <form action="./index.html" target="_parent">
+                  <input
+                    type="submit"
+                    class="mybutton"
+                    value="Sign In"
+                    onclick="document.location='#'"
+                  />
+                </form>
+              </div>
+              <div class="group">
+                <input type="submit" class="mycancelbutton" value="Cancel" />
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <div class="group">
+                <label for="user" class="label"
+                  >Email Address/Phone Number:</label
+                >
+                <input id="user" type="text" class="input" />
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Account Name:</label>
+                <input id="pass" type="text" class="input" data-type="text" />
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password:</label>
+                <input
+                  id="pass"
+                  type="password"
+                  class="input"
+                  data-type="password"
+                />
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Confirm your Password:</label>
+                <input
+                  id="pass"
+                  type="password"
+                  class="input"
+                  data-type="password"
+                />
+              </div>
+              <div class="group">
+                <form action="./index.html" target="_parent">
+                  <input type="submit" class="mybutton" value="Sign Up" />
+                </form>
+              </div>
+              <div class="group">
+                <input type="submit" class="mycancelbutton" value="Cancel" />
+              </div>
+              <!-- <div class="hr"></div> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- footer -->
 
     <div class="footer bg-d2">
-      <div class="row">
+      <div class="row myrow">
         <div class="brand col-4 mt-sm txt-c">
           <span class="c-white large-size fw-b">ZTEAM</span><br />
           <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
@@ -110,7 +205,7 @@
           </ul>
         </div>
       </div>
-      <div class="row">
+      <div class="row myrow">
         <div class="col-12 txt-c c-dark-1">
           © 2020 Copyright: zteamgameheaven.com
         </div>
@@ -120,7 +215,8 @@
     <!--jquery -->
 
     <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
       let links = document.querySelectorAll(".mylink");
       if (links.length > 0) {
@@ -135,6 +231,6 @@
           });
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>
