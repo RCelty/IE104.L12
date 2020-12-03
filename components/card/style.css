@@ -32,12 +32,17 @@
   overflow: hidden;
   max-width: 90%;
 }
+.mycard-inner .mycard-img,
+.mycard-title,
+.mycard-text {
+  cursor: pointer;
+}
 .mycard-inner:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   animation-name: example;
   animation-duration: 0.25s;
-  border-left: 5px solid gray;
+  border-left: 3px solid rgba(0, 0, 0, 0.25);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mycard-inner button {

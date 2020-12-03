@@ -7,17 +7,17 @@
 
     <!-- bootstrap, css -->
 
-    <link rel="stylesheet" href="./asset/reset.css" />
-    <link rel="stylesheet" href="./asset/setup.css" />
-    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./asset/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="./components/header/style.css" />
-    <link rel="stylesheet" href="./components/footer/style.css" />
-    <link rel="stylesheet" href="./components/card/style.css" />
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/card/style.css" />
 
     <!-- jquery -->
-    <script src="./asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="./JQuery/jquery.js"></script>
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../JQuery/jquery.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -121,19 +121,28 @@
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
-                    src="./images/91ZmgFvglpL.png"
+                    src="../images/91ZmgFvglpL.png"
                     alt="Card image cap"
+                    onclick="location.href='./test.html';"
                   />
                   <div class="card-body">
-                    <div class="mycard-title">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='./test.html';"
+                    >
                       <span>
                         Game's name sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
                       </span>
                     </div>
-                    <p class="mycard-text">
-                      Studio sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
-                    </p>
-                    <p class="mycard-text">$69,00</p>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='./test.html';"
+                    >
+                      <p class="mycard-text">
+                        Studio sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
+                      </p>
+                      <p class="mycard-text fw-b">$69,00</p>
+                    </div>
                     <button>
                       <span class="fas fa-shopping-cart"></span> Add to cart
                     </button>
