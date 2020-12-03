@@ -23,7 +23,7 @@ $(function() {
   }
 
   // Add To Basket Animation
-  $("button").on("click", function() {
+  $(".addbutton").on("click", function() {
     addToBasket(); $(this).parent().parent().find(".mycard_overlay").css({
       'transform': ' translateY(0px)',
       'opacity': '1',
