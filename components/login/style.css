@@ -95,6 +95,8 @@ body {
   left: 0;
   right: 0;
   animation: fade 0.4s;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
 }
 .mycarousel .arrow {
   z-index: 10;

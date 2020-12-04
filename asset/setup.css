@@ -92,6 +92,9 @@
 .xsmall-size {
   font-size: 12px !important;
 }
+.txt-upper {
+  text-transform: uppercase;
+}
 .hidden {
   overflow: hidden !important;
 }
