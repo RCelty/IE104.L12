@@ -25,58 +25,19 @@
 
     <!-- carousel -->
 
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide"
-      data-ride="carousel"
-      data-pause="none"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            class="d-block w-100 img-lg img-d"
-            src="../images/wz-social-share.jpg"
-            alt="First slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100 img-lg img-d"
-            src="../images/hinh-nen-pubg-chon-loc-dep-mat-cho-dien-thoai-va-may-tinh-background-800x450.jpg"
-            alt="Second slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100 img-lg img-d"
-            src="../images/91ZmgFvglpL.png"
-            alt="Third slide"
-          />
-        </div>
+    <div class="page-body">
+      <!-- image slideshow -->
+      <div class="mycarousel">
+        <img src="../images/91ZmgFvglpL.png" alt="" />
+        <img
+          src="../images/hinh-nen-pubg-chon-loc-dep-mat-cho-dien-thoai-va-may-tinh-background-800x450.jpg"
+          alt=""
+        />
+        <img src="../images/wz-social-share.jpg" alt="" />
       </div>
     </div>
-    <div class="mycontainer">
-      <!-- <div class="option-tabs">
-        <base target="frame" />
-        <ul>
-          <li class="login-tab large-size mr-sm">
-            <a href="./loginform.html" class="mylink active">Login</a>
-          </li>
-          <li class="register-tab large-size">
-            <a href="./signupform.html" class="mylink">Sign up</a>
-          </li>
-        </ul>
-        <div></div>
-      </div>
-      <div class="form">
-        <iframe
-          name="frame"
-          frameborder="0"
-          scrolling="no"
-          src="./loginform.html"
-        ></iframe>
-      </div> -->
 
+    <div class="mycontainer">
       <!-- Login form -->
 
       <div class="login-wrap">
@@ -220,23 +181,7 @@
     <!--jquery -->
 
     <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-
     <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- <script>
-      let links = document.querySelectorAll(".mylink");
-      if (links.length > 0) {
-        links.forEach((link) => {
-          link.addEventListener("click", () => {
-            activeLink = document.querySelector(".active");
-            console.log(activeLink);
-            if (activeLink != null) {
-              activeLink.setAttribute("class", "mylink");
-            }
-            link.setAttribute("class", "mylink active");
-          });
-        });
-      }
-    </script>  -->
+    <script src="../JQuery/Logineffect.js"></script>
   </body>
 </html>

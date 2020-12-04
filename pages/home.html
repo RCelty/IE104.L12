@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZTeam</title>
+
+    <!-- bootstrap, css -->
+
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/card/style.css" />
+    <link rel="stylesheet" href="../components/home/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <div class="header bg-d2">
+      <div class="heading c-w">
+        <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+        <div class="heading-right c-white">
+          <span class="username">Đỗ Đình Ngọc</span> |
+          <span class="fa-2x">
+            <i class="fas fa-shopping-cart">
+              <span class="counter"></span>
+            </i>
+          </span>
+        </div>
+      </div>
+      <div class="header-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-d2">
+          <a class="navbar-brand large-size fw-b" href="#">ZTeam</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- body -->
+
+    <div class="page-body">
+      <!-- image slideshow -->
+      <div class="mycarousel">
+        <div class="arrow arrow-left">
+          <i class="fas fa-chevron-circle-left"></i>
+        </div>
+        <img src="../images/91ZmgFvglpL.png" alt="" />
+        <img
+          src="../images/hinh-nen-pubg-chon-loc-dep-mat-cho-dien-thoai-va-may-tinh-background-800x450.jpg"
+          alt=""
+        />
+        <img src="../images/wz-social-share.jpg" alt="" />
+        <div class="arrow arrow-right">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+        <div class="dots">
+          <div class="dot">
+            <i class="far fa-dot-circle"></i>
+          </div>
+          <div class="dot">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="dot">
+            <i class="far fa-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page content  -->
+
+      <div class="page-body-content m-hor-md">
+        <div class="section">
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Sale Off</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/91ZmgFvglpL.png"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span>
+                      Game's name sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
+                    </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">
+                      Studio sadasdasdsfdfksdjfjsdfsdfefusdfjefsdg
+                    </p>
+                    <p class="mycard-text fw-b">$69,00</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"></span> Add to cart
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+          <div class="cardgroup">
+            <div class="cardgroup-header large-size pl-sm fw-b">
+              <p><i class="fas fa-gift"></i> Free Game</p>
+            </div>
+            <div class="row myrow">
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/91ZmgFvglpL.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-detail"></div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner"></div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer bg-d2">
+      <div class="row myrow">
+        <div class="brand col-4 mt-sm txt-c">
+          <span class="c-white large-size fw-b">ZTEAM</span><br />
+          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+        </div>
+        <div class="col-3 mt-sm">
+          <span class="c-white medium-size">Learn More</span><br />
+          <ul class="pt-xs">
+            <li><a>About Us</a></li>
+            <li><a>Terms & Condition</a></li>
+            <li><a>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-3 c-white mt-sm">
+          <span class="c-white medium-size">Follow Us</span><br />
+          <ul class="pt-xs">
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-2 c-white mt-sm">
+          <span class="c-white medium-size">Orther Site</span><br />
+          <ul class="pt-xs">
+            <li><a>PlayStation</a></li>
+            <li><a>ZForum</a></li>
+            <li><a>ZRealms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row myrow">
+        <div class="col-12 txt-c c-dark-1">
+          © 2020 Copyright: zteamgameheaven.com
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../JQuery/Homeeffect.js"></script>
+  </body>
+</html>
