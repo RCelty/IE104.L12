@@ -16,15 +16,10 @@
   <link rel="stylesheet" href="../components/footer/style.css" />
   <link rel="stylesheet" href="../components/body/style.css" />
   <link rel="stylesheet" href="../components/card/style.css" />
-  <link rel="stylesheet" href="../components/slide menu/style.css">
+  <link rel="stylesheet" href="../components/slide menu/style.css" />
   <link rel="stylesheet" href="../components/usename dropdown/style.css">
   <link rel="stylesheet" href="../components/search box/style.css">
   <link rel="stylesheet" href="../components/profile/style.css">
-
-  <!-- jquery -->
-  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-  <script src="../JQuery/jquery.js"></script>
-  <link rel="stylesheet" href="../components/slide menu/style.css" />
 </head>
 
 <body>
@@ -36,7 +31,7 @@
       <div class="heading-right c-white">
         <span class="username">
           <div id="navthing">
-            <h2><a href="#" id="Usename">
+            <h2><a href="#" id="Username">
                 Đỗ Đình Ngọc
               </a>
               <span class="medium-size">|</span>
@@ -44,12 +39,12 @@
                 <span class="counter"></span>
               </i>
             </h2>
-            <div class="dropdown">
+            <div class="userdropdown">
               <div class="arrow-up small-size"></div>
               <div class="formholder">
                 <fieldset>
-                  <input type="button" value="Logout" />
                   <input type="button" value="Profile" />
+                  <input type="button" value="Logout" />
                 </fieldset>
               </div>
             </div>
@@ -64,7 +59,7 @@
           <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
         </label>
         <input type="checkbox" id="navBar-icon" role="button">
-        <ul class="menu" id="dropdown-menu">
+        <ul class="menu medium-size" id="dropdown-menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Work<i class="arrow fw-b"></i></a>
             <ul class="drop">
@@ -104,12 +99,13 @@
                 <div class="lx-column column-user-pic">
                   <div class="profile-pic">
                     <div class="pic">
-                      <img src="https://bit.ly/3jRbrbp" id="avatar" alt="" width="4024" height="6048" loading="lazy">
-                      <a class="lx-btn"><i class="fas fa-camera-retro" onclick="$('#change-avatar').trigger('click'); return true;"></i>&nbsp;&nbsp;Change your
-                        profile picture.</a>
+                      <img src="../images/EreshkigalAF.png" id="avatar" alt="" width="4024" height="6048" loading="lazy">
+                      <a class="lx-btn"><i class="fas fa-camera-retro"
+                          onclick="$('#change-avatar').trigger('click'); return true;">
+                        </i>&nbsp;&nbsp;Change your profile picture.</a>
                       <input type="file" id="change-avatar">
                     </div>
-                    <h1 class="username">Wanbirosi</h1>
+                    <h1 class="username">wanbirosi</h1>
                   </div>
                 </div>
               </div>
@@ -117,8 +113,10 @@
           </section>
         </main>
       </div>
-      <div class="page-content col-lg-8 col-sm-6">
-        
+      <div class="col-lg-8 col-sm-6">
+        <main class="has-dflex-center">
+          
+        </main>
       </div>
     </div>
   </div>
@@ -170,15 +168,10 @@
   <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../JQuery/slidemenu.js"></script>
   <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-  <script src="../JQuery/Storeeffect.js"></script>
-  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
   <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../JQuery/Storeeffect.js"></script>
   <script src="../JQuery/slidemenu.js"></script>
-  <script src="./../JQuery/menu navBar checkbox.js"></script>
-  <script src="./../JQuery/usename dropdown.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" defer crossorigin="anonymous"
-    data-search-pseudo-elements></script>
+  <script src="./../JQuery/header.js"></script>
   <script src="../JQuery/change_avatar_picture.js"></script>
 </body>
 

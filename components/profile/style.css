@@ -6,17 +6,17 @@ main section {
     width: 100%;
 }
 
-main section .has-dflex-center {
+main .has-dflex-center {
     display: flex !important;
     justify-content: center !important;
 }
 
-main section .lx-container-70 {
+main .lx-container-70 {
     width: 80%;
     margin: 0 auto;
 }
 
-main section .lx-row {
+main .lx-row {
     width: 100%;
     display: flex;
     flex-flow: wrap row;
@@ -24,7 +24,7 @@ main section .lx-row {
     justify-content: center;
 }
 
-main section .align-stretch {
+main .align-stretch {
     align-items: stretch !important;
 }
 
