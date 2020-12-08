@@ -112,6 +112,10 @@
   margin: 10px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+.cardgroup-section {
+  animation: fade 0.4s;
+  position: relative;
+}
 .cardgroup-card {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -123,6 +127,22 @@
   border: 1px solid lightgrey;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.cardgroup-header {
+  display: flex;
+  position: relative;
+}
+.cardgroup-header-btn {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.cardgroup-header-btn .prev-btn:hover,
+.cardgroup-header-btn .forw-btn:hover {
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: rgb(0, 0, 0, 0.6);
 }
 .cardgroup-card-inner .cardgroup-card-img {
   width: 100%;
@@ -140,4 +160,14 @@
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+}
+@keyframes fade {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
 }
