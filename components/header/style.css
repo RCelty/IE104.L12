@@ -10,9 +10,7 @@
 .header-nav {
   clear: both;
 }
-.header .heading .username {
-  font-size: 25px;
-}
+
 .counter {
   color: white;
 }
@@ -37,15 +35,15 @@
 .navigation .logo {
   position: relative;
   float: left;
-  line-height: 50px;
   padding-left: 20px;
 }
 
 .navigation .menu {
   margin: 0;
   margin-right: 20px;
-  padding-top: 4px;
+  padding-top: 2px;
   position: relative;
+  text-align: center;
 }
 
 .navigation .menu li {
