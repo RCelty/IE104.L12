@@ -1,0 +1,28 @@
+.img-detail
+{
+    height: 300px;
+    width: 100%;
+}
+.decription
+{
+    line-height: 1.5em;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+.icon
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.infor
+{
+    font-size: 10;
+}
