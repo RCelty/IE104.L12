@@ -22,7 +22,6 @@
   background-color: #171A21;
   z-index: 100;
   position : relative;
-  margin-left: 20px;
 }
 
 .navigation a{
@@ -39,6 +38,7 @@
   position: relative;
   float: left;
   line-height: 50px;
+  padding-left: 20px;
 }
 
 .navigation .menu {
@@ -199,6 +199,7 @@
     background-color: #171A21;
     margin-top: 50px;
     position: absolute;
+    padding-left: 20px;
   }
 
   .search{
