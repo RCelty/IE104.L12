@@ -17,7 +17,7 @@
 
 /* navigation bar */
 .navigation {
-  height: 50px;
+  height: 55px;
   background-color: #171A21;
   z-index: 100;
   position : relative;
@@ -35,8 +35,9 @@
 
 .navigation .logo {
   position: relative;
+  font-size: 36px;
   float: left;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .navigation .menu {
@@ -198,7 +199,7 @@
     background-color: #171A21;
     margin-top: 50px;
     position: absolute;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .search{
