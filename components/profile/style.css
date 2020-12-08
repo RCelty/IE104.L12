@@ -1,0 +1,101 @@
+main {
+    padding: 20px 0;
+}
+
+main section {
+    width: 100%;
+}
+
+main .has-dflex-center {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+main .lx-container-70 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .lx-row {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .align-stretch {
+    align-items: stretch !important;
+}
+
+main section .lx-column .column-user-pic {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+main section .profile-pic {
+    width: auto;
+    margin: auto;
+    padding: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+main section .profile-pic .username {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+main section .profile-pic .pic {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main section .profile-pic .pic .lx-btn {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+main section .profile-pic .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main section .profile-pic .pic:focus .lx-btn,
+main section .profile-pic .pic:focus-within .lx-btn,
+main section .profile-pic .pic:hover .lx-btn {
+    opacity: 1;
+    display: flex;
+}
+
+main section #change-avatar{
+    display: none;
+}
