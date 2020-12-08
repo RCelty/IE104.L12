@@ -1,25 +1,23 @@
 $('input[type="button"]').mousedown(function () {
-    $(this).css('background', '#2ecc71');
+    $(this).css('background', '#08939b');
 });
 $('input[type="button"]').mouseup(function () {
-    $(this).css('background', '#1abc9c');
+    $(this).css('background', '#0dcfda');
 });
 
-$('#Usename').click(function () {
-    $('.dropdown').fadeToggle('slow');
-    $(this).toggleClass('green');
+$('#Username').click(function () {
+    $('.userdropdown').fadeToggle('slow');
+    $(this).toggleClass('c-blue');
 });
-
-
 
 $(document).mouseup(function (e) {
-    var container = $(".dropdown");
+    var container = $(".userdropdown");
 
     if (!container.is(e.target) // if the target of the click isn't the container...
         &&
         container.has(e.target).length === 0) // ... nor a descendant of the container
     {
         container.hide();
-        $('#Usename').removeClass('green');
+        $('#Username').removeClass('c-blue');
     }
 });

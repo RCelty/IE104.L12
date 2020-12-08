@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zteam</title>
+
+  <!-- bootstrap, css -->
+
+  <link rel="stylesheet" href="../asset/reset.css" />
+  <link rel="stylesheet" href="../asset/setup.css" />
+  <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="../components/header/style.css" />
+  <link rel="stylesheet" href="../components/footer/style.css" />
+  <link rel="stylesheet" href="../components/body/style.css" />
+  <link rel="stylesheet" href="../components/card/style.css" />
+  <link rel="stylesheet" href="../components/slide menu/style.css">
+  <link rel="stylesheet" href="../components/usename dropdown/style.css">
+  <link rel="stylesheet" href="../components/search box/style.css">
+  <link rel="stylesheet" href="../components/profile/style.css">
+
+  <!-- jquery -->
+  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../JQuery/jquery.js"></script>
+  <link rel="stylesheet" href="../components/slide menu/style.css" />
+</head>
+
+<body>
+  <!-- header -->
+
+  <div class="header bg-d2">
+    <div class="heading c-w">
+      <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+      <div class="heading-right c-white">
+        <span class="username">
+          <div id="navthing">
+            <h2><a href="#" id="Usename">
+                Đỗ Đình Ngọc
+              </a>
+              <span class="medium-size">|</span>
+              <i class="fas fa-shopping-cart large-size">
+                <span class="counter"></span>
+              </i>
+            </h2>
+            <div class="dropdown">
+              <div class="arrow-up small-size"></div>
+              <div class="formholder">
+                <fieldset>
+                  <input type="button" value="Logout" />
+                  <input type="button" value="Profile" />
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="header-nav">
+      <nav class="navigation">
+        <a href="#" class="logo large-size fw-b">Zteam</a>
+        <label for="navBar-icon" class="navBar-icon">
+          <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+        </label>
+        <input type="checkbox" id="navBar-icon" role="button">
+        <ul class="menu" id="dropdown-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work<i class="arrow fw-b"></i></a>
+            <ul class="drop">
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Audio</a></li>
+              <li><a href="#">Films</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact<i class="arrow"></i></a>
+            <ul class="drop">
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Phone</a></li>
+            </ul>
+          </li>
+          <li class="search">
+            <form onsubmit="event.preventDefault();" role="search">
+              <label for="search">Search for stuff</label>
+              <input id="search" type="search" placeholder="Search..." autofocus required />
+              <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- body -->
+
+  <div class="body">
+    <div class="row myrow">
+      <div class="col-lg-4 col-sm-6 txt-c">
+        <main class="has-dflex-center">
+          <section>
+            <div class="lx-container-70">
+              <div class="lx-row align-stretch">
+                <div class="lx-column column-user-pic">
+                  <div class="profile-pic">
+                    <div class="pic">
+                      <img src="https://bit.ly/3jRbrbp" id="avatar" alt="" width="4024" height="6048" loading="lazy">
+                      <a class="lx-btn"><i class="fas fa-camera-retro" onclick="$('#change-avatar').trigger('click'); return true;"></i>&nbsp;&nbsp;Change your
+                        profile picture.</a>
+                      <input type="file" id="change-avatar">
+                    </div>
+                    <h1 class="username">Wanbirosi</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="page-content col-lg-8 col-sm-6">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer bg-d2">
+    <div class="row myrow">
+      <div class="brand col-4 mt-sm txt-c">
+        <span class="c-white large-size fw-b">ZTEAM</span><br />
+        <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+        <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+      </div>
+      <div class="col-3 mt-sm">
+        <span class="c-white medium-size">Learn More</span><br />
+        <ul class="pt-xs">
+          <li><a>About Us</a></li>
+          <li><a>Terms & Condition</a></li>
+          <li><a>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-3 c-white mt-sm">
+        <span class="c-white medium-size">Follow Us</span><br />
+        <ul class="pt-xs">
+          <li><a>Facebook</a></li>
+          <li><a>Twitter</a></li>
+          <li><a>Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-2 c-white mt-sm">
+        <span class="c-white medium-size">Orther Site</span><br />
+        <ul class="pt-xs">
+          <li><a>PlayStation</a></li>
+          <li><a>ZForum</a></li>
+          <li><a>ZRealms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row myrow">
+      <div class="col-12 txt-c c-dark-1">
+        © 2020 Copyright: zteamgameheaven.com
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+
+  <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../JQuery/slidemenu.js"></script>
+  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../JQuery/Storeeffect.js"></script>
+  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../JQuery/Storeeffect.js"></script>
+  <script src="../JQuery/slidemenu.js"></script>
+  <script src="./../JQuery/menu navBar checkbox.js"></script>
+  <script src="./../JQuery/usename dropdown.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" defer crossorigin="anonymous"
+    data-search-pseudo-elements></script>
+  <script src="../JQuery/change_avatar_picture.js"></script>
+</body>
+
+</html>
