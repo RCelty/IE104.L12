@@ -90,30 +90,24 @@
   <div class="body">
     <div class="row myrow">
       <div class="col-lg-4 col-sm-6 txt-c">
-        <main class="has-dflex-center">
-          <section>
-            <div class="lx-container-70">
-              <div class="lx-row align-stretch">
-                <div class="lx-column column-user-pic">
-                  <div class="profile-pic">
-                    <div class="pic">
-                      <img src="../images/EreshkigalAF.png" id="avatar" alt="" width="4024" height="6048" loading="lazy">
-                      <a class="lx-btn"><i class="fas fa-camera-retro"
-                          onclick="$('#change-avatar').trigger('click'); return true;">
-                        </i>&nbsp;&nbsp;Change your profile picture.</a>
-                      <input type="file" id="change-avatar">
-                    </div>
-                    <h1 class="username">wanbirosi</h1>
-                  </div>
-                </div>
+        <div class="has-dflex-center profile-avatar">
+          <div class="lx-row align-stretch">
+            <div class="profile-pic">
+              <div class="pic" ondragover="$(this).trigger('hover'); return false;">
+                <img src="../images/EreshkigalAF.png" id="avatar" alt="" width="4024" height="6048" loading="lazy">
+                <a class="lx-btn"><i class="fas fa-camera-retro"
+                    onclick="$('#change-avatar').trigger('click'); return true;">
+                  </i>&nbsp;&nbsp;Change your profile picture.</a>
+                <input type="file" id="change-avatar">
               </div>
+              <h1 class="username">wanbirosi</h1>
             </div>
-          </section>
-        </main>
+          </div>
+        </div>
       </div>
       <div class="col-lg-8 col-sm-6">
         <main class="has-dflex-center">
-          
+
         </main>
       </div>
     </div>
@@ -163,8 +157,6 @@
   <!-- jquery -->
 
   <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-  <script src="../components/slide menu/script.js"></script>
-  <script src="../components/card/script.js"></script>
   <script src="../components/header/script.js"></script>
   <script src="../components/profile_avatar/script.js"></script>
 </body>

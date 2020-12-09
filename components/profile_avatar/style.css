@@ -1,19 +1,14 @@
-main {
+.profile-avatar {
     padding: 20px 0;
     width: 100%;
 }
 
-main .has-dflex-center {
+.profile-avatar .has-dflex-center {
     display: flex !important;
     justify-content: center !important;
 }
 
-main .lx-container-70 {
-    width: 80%;
-    margin: 0 auto;
-}
-
-main .lx-row {
+.profile-avatar .lx-row {
     width: 100%;
     display: flex;
     flex-flow: wrap row;
@@ -21,17 +16,11 @@ main .lx-row {
     justify-content: center;
 }
 
-main .align-stretch {
+.profile-avatar .align-stretch {
     align-items: stretch !important;
 }
 
-main section .lx-column .column-user-pic {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-main section .profile-pic {
+.profile-avatar .profile-pic {
     width: auto;
     margin: auto;
     padding: 30px;
@@ -44,7 +33,7 @@ main section .profile-pic {
     background-color: white;
 }
 
-main section .profile-pic .username {
+.profile-avatar .profile-pic .username {
     width: 100%;
     text-align: center;
     font-size: 26px;
@@ -52,15 +41,16 @@ main section .profile-pic .username {
     margin-top: 25px;
 }
 
-main section .profile-pic .pic {
+.profile-avatar .profile-pic .pic {
     width: 16rem;
     height: 16rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    background-color: white;
 }
 
-main section .profile-pic .pic .lx-btn {
+.profile-avatar .profile-pic .pic .lx-btn {
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -79,21 +69,21 @@ main section .profile-pic .pic .lx-btn {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-main section .profile-pic .pic img {
+.profile-avatar .profile-pic .pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-main section .profile-pic .pic:focus .lx-btn,
-main section .profile-pic .pic:focus-within .lx-btn,
-main section .profile-pic .pic:hover .lx-btn {
+.profile-avatar .profile-pic .pic:focus .lx-btn,
+.profile-avatar .profile-pic .pic:focus-within .lx-btn,
+.profile-avatar .profile-pic .pic:hover .lx-btn {
     opacity: 1;
     display: flex;
 }
 
-main section #change-avatar{
+.profile-avatar #change-avatar{
     display: none;
     
 }
