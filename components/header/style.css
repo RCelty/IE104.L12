@@ -18,12 +18,12 @@
 /* navigation bar */
 .navigation {
   height: 55px;
-  background-color: #171A21;
+  background-color: #171a21;
   z-index: 100;
-  position : relative;
+  position: relative;
 }
 
-.navigation a{
+.navigation a {
   color: white;
   text-decoration: none;
 }
@@ -38,6 +38,7 @@
   font-size: 36px;
   float: left;
   padding-left: 30px;
+  text-transform: uppercase;
 }
 
 .navigation .menu {
@@ -46,6 +47,17 @@
   padding-top: 2px;
   position: relative;
   text-align: center;
+  animation: fadein 0.8s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .navigation .menu li {
@@ -55,20 +67,20 @@
   display: inline-block;
 }
 
-.navigation .menu li>a {
+.navigation .menu li > a {
   position: relative;
   display: inline-block;
   line-height: 30px;
   height: 30px;
 }
 
-.navigation .menu li>a:hover {
+.navigation .menu li > a:hover {
   color: #fff;
   background-color: #33334d;
   border-radius: 2px;
 }
 
-.navigation .menu li>a .arrow {
+.navigation .menu li > a .arrow {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -80,7 +92,7 @@
   border-color: rgba(0, 0, 0, 0.3) transparent;
 }
 
-.navigation .menu li>a .arrow:after {
+.navigation .menu li > a .arrow:after {
   content: "";
   border-left: 1px solid rgba(0, 0, 0, 0.15);
   top: -10px;
@@ -93,12 +105,12 @@
   position: absolute;
   left: 0;
   margin: 0;
-  background-color: #171A21;
+  background-color: #171a21;
   border-radius: 5px;
   display: none;
 }
 
-.navigation .menu li ul>li {
+.navigation .menu li ul > li {
   clear: both;
   list-style: none;
   display: block;
@@ -107,15 +119,15 @@
   width: 100%;
 }
 
-.navigation .menu li ul>li:hover {
+.navigation .menu li ul > li:hover {
   background-color: #9494b8;
 }
 
-.navigation .menu li ul>li:hover>a {
+.navigation .menu li ul > li:hover > a {
   background-color: #9494b8;
 }
 
-.navigation .menu li:hover>.drop {
+.navigation .menu li:hover > .drop {
   display: block;
   padding: 1px;
   animation: fadeInRight 0.3s ease;
@@ -133,7 +145,7 @@
   }
 }
 
-.navigation input[type=checkbox] {
+.navigation input[type="checkbox"] {
   display: none;
   z-index: 200;
 }
@@ -142,15 +154,15 @@
   display: none;
   float: right;
   margin-bottom: 0px;
-  background-color: #171A21;
+  background-color: #171a21;
 }
 
 .navigation #menu-icon {
-  padding-top:10px
+  padding-top: 10px;
 }
 @media screen and (max-width: 900px) {
-  .navigation{
-    background-color: #171A21;
+  .navigation {
+    background-color: #171a21;
   }
 
   .navigation .menu {
@@ -172,16 +184,16 @@
     color: white;
   }
 
-  .navigation .menu li:hover>.drop {
+  .navigation .menu li:hover > .drop {
     display: block;
     position: relative;
     animation: none;
   }
-  .navigation .menu li{
+  .navigation .menu li {
     margin-bottom: 0px;
   }
 
-  .navigation .menu li>a {
+  .navigation .menu li > a {
     position: relative;
     display: block;
     text-align: left;
@@ -189,20 +201,20 @@
     height: 30px;
   }
 
-  .navigation .menu>li{
+  .navigation .menu > li {
     max-width: 40%;
   }
-  
-  .navigation input[type=checkbox]:checked~#dropdown-menu{
+
+  .navigation input[type="checkbox"]:checked ~ #dropdown-menu {
     display: flex;
     flex-direction: column;
-    background-color: #171A21;
+    background-color: #171a21;
     margin-top: 50px;
     position: absolute;
     padding-left: 30px;
   }
 
-  .search{
+  .search {
     float: none;
     padding-bottom: 8px;
   }
@@ -341,7 +353,7 @@
   width: 78%;
 }
 
-.search input:not(:placeholder-shown)+button {
+.search input:not(:placeholder-shown) + button {
   display: block;
 }
 
