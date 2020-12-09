@@ -64,7 +64,7 @@
 
 .navigation .menu li>a:hover {
   color: #fff;
-  background: #33334d;
+  background-color: #33334d;
   border-radius: 2px;
 }
 
@@ -108,11 +108,11 @@
 }
 
 .navigation .menu li ul>li:hover {
-  background: #9494b8;
+  background-color: #9494b8;
 }
 
 .navigation .menu li ul>li:hover>a {
-  background: #9494b8;
+  background-color: #9494b8;
 }
 
 .navigation .menu li:hover>.drop {
@@ -244,14 +244,14 @@
 }
 
 .heading .username .formholder {
-  background: #0dcfda;
+  background-color: #0dcfda;
   width: 100px;
   border-radius: 5px;
   margin-left: 120%;
 }
 
 .heading .username .formholder input[type="button"] {
-  background: #0dcfda;
+  background-color: #0dcfda;
   font-size: 20px;
   display: block;
   width: 97%;
@@ -263,7 +263,7 @@
 }
 
 .heading .username .formholder input[type="button"]:hover {
-  background: #04bac4;
+  background-color: #04bac4;
 }
 
 .heading .username a {
@@ -293,7 +293,7 @@
 .search form {
   position: relative;
   width: 30rem;
-  background: var(--color-brand);
+  background-color: var(--color-brand);
   border-radius: var(--rad);
   max-width: 200px;
 }
@@ -310,7 +310,7 @@
   outline: 0;
   max-width: 200px;
   height: 35px;
-  background: var(--color-light);
+  background-color: var(--color-light);
   padding: 0 1.6rem;
   border-radius: var(--rad);
   appearance: none;
@@ -328,7 +328,7 @@
   padding-left: 56px;
   width: var(--btn-width);
   font-weight: bold;
-  background: var(--color-brand);
+  background-color: var(--color-brand);
   border-radius: var(--rad) 0 0 var(--rad);
 }
 

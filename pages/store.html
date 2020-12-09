@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zteam</title>
 
-    <!-- bootstrap, css -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zteam</title>
 
-    <link rel="stylesheet" href="../asset/reset.css" />
-    <link rel="stylesheet" href="../asset/setup.css" />
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="../components/header/style.css" />
-    <link rel="stylesheet" href="../components/footer/style.css" />
-    <link rel="stylesheet" href="../components/body/style.css" />
-    <link rel="stylesheet" href="../components/card/style.css" />
-    <link rel="stylesheet" href="../components/slide menu/style.css" />
-  </head>
-  <body>
-    <!-- header -->
+  <!-- bootstrap, css -->
 
-    <div class="header bg-d2">
-      <div class="heading c-w">
-        <!-- <span class="logo"><img src="" alt="logo" /></span> -->
-        <div class="heading-right c-white">
-          <span class="username">
-            <div id="navthing">
-              <h2><a href="#" id="Username">
-                Đỗ Đình Ngọc 
+  <link rel="stylesheet" href="../asset/reset.css" />
+  <link rel="stylesheet" href="../asset/setup.css" />
+  <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="../components/header/style.css" />
+  <link rel="stylesheet" href="../components/footer/style.css" />
+  <link rel="stylesheet" href="../components/body/style.css" />
+  <link rel="stylesheet" href="../components/card/style.css" />
+  <link rel="stylesheet" href="../components/slide menu/style.css" />
+  <link rel="stylesheet" href="../components/shopping-cart/style.css">
+</head>
+
+<body>
+  <!-- header -->
+
+  <div class="header bg-d2">
+    <div class="heading c-w">
+      <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+      <div class="heading-right c-white">
+        <span class="username">
+          <div id="navthing">
+            <h2><a href="#" id="Username">
+                Đỗ Đình Ngọc
               </a>
               <span class="medium-size">|</span>
               <i class="fas fa-shopping-cart large-size">
@@ -37,1283 +40,992 @@
             <div class="userdropdown">
               <div class="arrow-up small-size"></div>
               <div class="formholder">
-                  <fieldset>
-                    <input type="button" value="Profile" />
-                    <input type="button" value="Logout" />
-                  </fieldset>
+                <fieldset>
+                  <input type="button" value="Profile" />
+                  <input type="button" value="Logout" />
+                </fieldset>
               </div>
             </div>
-            </div>
-          </span>
-        </div>
+          </div>
+        </span>
       </div>
-      <div class="header-nav">
-        <nav class="navigation">
-          <a href="#" class="logo fw-b">Zteam</a>
-          <label for="navBar-icon" class="navBar-icon">
-            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
-          </label>
-          <input type="checkbox" id="navBar-icon" role="button">
+    </div>
+    <div class="header-nav">
+      <nav class="navigation">
+        <a href="#" class="logo fw-b">Zteam</a>
+        <label for="navBar-icon" class="navBar-icon">
+          <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+        </label>
+        <input type="checkbox" id="navBar-icon" role="button">
         <ul class="menu medium-size" id="dropdown-menu">
-              <li><a href="#">Home</a></li>
-              <li ><a href="#">Work<i class="arrow fw-b"></i></a>
-                  <ul class="drop">
-                      <li><a href="#">Art</a></li>
-                      <li><a href="#">Photography</a></li>
-                      <li><a href="#">Audio</a></li>
-                      <li><a href="#">Films</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Contact<i class="arrow"></i></a>
-                  <ul class="drop">
-                      <li><a href="#">Email</a></li>
-                      <li><a href="#">Phone</a></li>
-                  </ul>
-              </li>
-              <li class="search">
-                <form onsubmit="event.preventDefault();" role="search">
-                  <label for="search">Search for stuff</label>
-                  <input id="search" type="search" placeholder="Search..." autofocus required />
-                  <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>    
-                </form>
-              </li>
-          </ul>
-      </nav>
-      </div>
-    </div>
-
-    <!-- body -->
-
-    <div class="body">
-      <div class="row myrow">
-        <div class="col-lg-3 col-sm-6 txt-c">
-          <nav class="slidemenu">
-            <ul class="sticky">
-                <li>
-                    <a href="#Action">Action</a>
-                </li>
-                  <hr >
-                <li>
-                    <a href="#Adventure">Adventure</a>
-                </li>
-                  <hr >
-                <li>
-                    <a href="#RPG">RPG</a>
-                </li> 
-                  <hr>
-                <li>
-                    <a href="#Platformer">Platformer</a>
-                </li> 
-                  <hr > 
-                <li>
-                <a href="#Casual">Casual</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Indie"> Indie</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Racing"> Racing</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Simulator"> Simulation</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Sports"> Sports</a>
-                </li> 
-                  <hr> 
-                <li>
-                  <a href="#Strategy"> Strategy</a>
-                </li>              
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work<i class="arrow fw-b"></i></a>
+            <ul class="drop">
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Audio</a></li>
+              <li><a href="#">Films</a></li>
             </ul>
-          </nav>
+          </li>
+          <li><a href="#">Contact<i class="arrow"></i></a>
+            <ul class="drop">
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Phone</a></li>
+            </ul>
+          </li>
+          <li class="search">
+            <form onsubmit="event.preventDefault();" role="search">
+              <label for="search">Search for stuff</label>
+              <input id="search" type="search" placeholder="Search..." autofocus required />
+              <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!--shopping cart in bottom -->
+  <button id="bottom-shopping-cart">
+    <i class="fas fa-shopping-cart">
+      <span class="counter"></span>
+    </i>
+  </button>
+
+  <!-- body -->
+
+  <div class="body">
+    <div class="row myrow">
+      <div class="col-lg-3 col-sm-6 txt-c">
+        <nav class="slidemenu">
+          <ul class="sticky">
+            <li>
+              <a href="#Action">Action</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Adventure">Adventure</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#RPG">RPG</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Platformer">Platformer</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Casual">Casual</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Indie"> Indie</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Racing"> Racing</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Simulator"> Simulation</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Sports"> Sports</a>
+            </li>
+            <hr>
+            <li>
+              <a href="#Strategy"> Strategy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-content col-lg-9 col-sm-6">
+        <div class="section">
+          <a name="Action"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Action game</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/ApexLegend.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Apex Legends </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Respawn Entertainment</p>
+                    <p class="mycard-text fw-b">Free</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Tom Clancy's Rainbow Six Siege </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Ubisoft</p>
+                    <p class="mycard-text fw-b">$14.27</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/CSGO.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Counter-Strike: Global Offensive </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Valve</p>
+                    <p class="mycard-text fw-b">Free</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
         </div>
-        <div class="page-content col-lg-9 col-sm-6">
-          <div class="section">
-            <a name="Action"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Action game</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/ApexLegend.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Apex Legends </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Respawn Entertainment</p>
-                      <p class="mycard-text fw-b">Free</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+        <div class="section">
+          <a name="Adventure"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Adventure</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/RDR2.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Red Dead Redemption 2 </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">$19.85</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Tom Clancy's Rainbow Six Siege </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Ubisoft</p>
-                      <p class="mycard-text fw-b">$14.27</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/CSGO.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Counter-Strike: Global Offensive </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Valve</p>
-                      <p class="mycard-text fw-b">Free</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Sekiro.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Sekiro™: Shadows Die Twice - GOTY Edition </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Activision</p>
+                    <p class="mycard-text fw-b">$55.78</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Saunautica.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Subnautica </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Unknown Worlds Entertainment</p>
+                    <p class="mycard-text fw-b">$9.51</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Adventure"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Adventure</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/RDR2.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Red Dead Redemption 2 </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Rockstar Games</p>
-                      <p class="mycard-text fw-b">$19.85</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="RPG"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>RPG</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Hades.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Hades </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Supergiant Games</p>
+                    <p class="mycard-text fw-b">$9.51</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Sekiro.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Sekiro™: Shadows Die Twice - GOTY Edition </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Activision</p>
-                      <p class="mycard-text fw-b">$55.78</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Saunautica.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Subnautica </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Unknown Worlds Entertainment</p>
-                      <p class="mycard-text fw-b">$9.51</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Cyberpunk2077.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Cyberpunk 2077 </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">CD PROJEKT RED</p>
+                    <p class="mycard-text fw-b">$42.81</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Starwar.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> STAR WARS Jedi: Fallen Order™ </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Respawn Entertainment</p>
+                    <p class="mycard-text fw-b">$60.54</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="RPG"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>RPG</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Hades.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Hades </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Supergiant Games</p>
-                      <p class="mycard-text fw-b">$9.51</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Platformer"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Platformer</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Kanata0.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Katana ZERO </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Askiisoft</p>
+                    <p class="mycard-text fw-b">$7.14</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Cyberpunk2077.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Cyberpunk 2077 </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">CD PROJEKT RED</p>
-                      <p class="mycard-text fw-b">$42.81</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Starwar.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> STAR WARS Jedi: Fallen Order™ </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Respawn Entertainment</p>
-                      <p class="mycard-text fw-b">$60.54</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/20XX.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Buy 20XX </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Batterystaple Games</p>
+                    <p class="mycard-text fw-b">$1.79</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Trine2.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Trine 2: Complete Story </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Frozenbyte</p>
+                    <p class="mycard-text fw-b">$8.13</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Platformer"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Platformer</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Kanata0.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Katana ZERO </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Askiisoft</p>
-                      <p class="mycard-text fw-b">$7.14</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Casual"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Casual</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/FallGuy.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Fall Guys: Ultimate Knockout </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Mediatonic</p>
+                    <p class="mycard-text fw-b">$8.13</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/20XX.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Buy 20XX </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Batterystaple Games</p>
-                      <p class="mycard-text fw-b">$1.79</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Trine2.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Trine 2: Complete Story </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Frozenbyte</p>
-                      <p class="mycard-text fw-b">$8.13</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Jump.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> JUMP FORCE </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">BANDAI NAMCO Entertainment</p>
+                    <p class="mycard-text fw-b">$45.84</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Amongus.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Among Us </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Innersloth</p>
+                    <p class="mycard-text fw-b">$3.00</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Casual"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Casual</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/FallGuy.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Fall Guys: Ultimate Knockout </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Mediatonic</p>
-                      <p class="mycard-text fw-b">$8.13</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Indie"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Indie</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Ori.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Ori and the Blind Forest </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Moon Studios
+                    </p>
+                    <p class="mycard-text fw-b">$8.11</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Jump.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> JUMP FORCE </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">BANDAI NAMCO Entertainment</p>
-                      <p class="mycard-text fw-b">$45.84</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Amongus.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Among Us </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Innersloth</p>
-                      <p class="mycard-text fw-b">$3.00</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Phasmophobia.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Phasmophobia
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Kinetic Games
+                    </p>
+                    <p class="mycard-text fw-b">$6.90</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/RisskOfRain.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Risk of Rain 2
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Hopoo Games
+                    </p>
+                    <p class="mycard-text fw-b">$9.49</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Indie"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Indie</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Ori.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Ori and the Blind Forest </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Moon Studios
-                      </p>
-                      <p class="mycard-text fw-b">$8.11</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Racing"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Racing</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/NeedForSpeed.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Need for Speed™ Heat
+                    </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Ghost Games
+                    </p>
+                    <p class="mycard-text fw-b">$71.19</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Phasmophobia.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Phasmophobia
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Kinetic Games
-                      </p>
-                      <p class="mycard-text fw-b">$6.90</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/RisskOfRain.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Risk of Rain 2
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Hopoo Games
-                      </p>
-                      <p class="mycard-text fw-b">$9.49</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/F1.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      F1® 2020
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Codemasters
+                    </p>
+                    <p class="mycard-text fw-b">$20.71</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Madmax.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Mad Max
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Avalanche Studios
+                    </p>
+                    <p class="mycard-text fw-b">$8.11</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Racing"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Racing</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/NeedForSpeed.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Need for Speed™ Heat
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Ghost Games
-                      </p>
-                      <p class="mycard-text fw-b">$71.19</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Simulator"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Simulation</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/MicrosoftFlightSimulator.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Microsoft Flight Simulator
+                    </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Xbox Game Studios
+                    </p>
+                    <p class="mycard-text fw-b">$57.82</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/F1.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        F1® 2020
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Codemasters
-                      </p>
-                      <p class="mycard-text fw-b">$20.71</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Madmax.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Mad Max
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Avalanche Studios
-                      </p>
-                      <p class="mycard-text fw-b">$8.11</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/BusSImulator.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Bus Simulator 18
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      astragon Entertainment
+                    </p>
+                    <p class="mycard-text fw-b">$24.59</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Truck.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      American Truck Simulator
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      SCS Software
+                    </p>
+                    <p class="mycard-text fw-b">$15.10</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Simulator"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Simulation</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/MicrosoftFlightSimulator.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Microsoft Flight Simulator
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Xbox Game Studios
-                      </p>
-                      <p class="mycard-text fw-b">$57.82</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Sports"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Sports</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/FIFA.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      EA SPORTS™ FIFA 21
+                    </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Electronic Arts
+                    </p>
+                    <p class="mycard-text fw-b">$60.41</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/BusSImulator.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Bus Simulator 18
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        astragon Entertainment
-                      </p>
-                      <p class="mycard-text fw-b">$24.59</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Truck.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        American Truck Simulator
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        SCS Software
-                      </p>
-                      <p class="mycard-text fw-b">$15.10</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/FM2021.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Football Manager 2021
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      SEGA
+                    </p>
+                    <p class="mycard-text fw-b">$34.09</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/PGATour.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      PGA TOUR 2K21
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      2K
+                    </p>
+                    <p class="mycard-text fw-b">$43.15</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Sports"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Sports</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/FIFA.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        EA SPORTS™ FIFA 21
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Electronic Arts
-                      </p>
-                      <p class="mycard-text fw-b">$60.41</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+        <div class="section">
+          <a name="Strategy"></a>
+          <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+            <span>Strategy</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/ThreeKingdom.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Total War: THREE KINGDOMS
+                    </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      SEGA
+                    </p>
+                    <p class="mycard-text fw-b">$37.97</p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/FM2021.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Football Manager 2021
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        SEGA
-                      </p>
-                      <p class="mycard-text fw-b">$34.09</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/PGATour.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        PGA TOUR 2K21
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        2K
-                      </p>
-                      <p class="mycard-text fw-b">$43.15</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Crusader.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Crusader Kings III
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Paradox Interactive
+                    </p>
+                    <p class="mycard-text fw-b">$16.83</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-4 col-sm-12">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Dota.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span>
+                      Dota 2
+                    </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">
+                      Valve
+                    </p>
+                    <p class="mycard-text fw-b">Free</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="section">
-            <a name="Strategy"></a>
-            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
-              <span>Strategy</span>
-            </div>
-            <div class="row myrow">
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/ThreeKingdom.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Total War: THREE KINGDOMS
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        SEGA
-                      </p>
-                      <p class="mycard-text fw-b">$37.97</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Crusader.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Crusader Kings III
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Paradox Interactive
-                      </p>
-                      <p class="mycard-text fw-b">$16.83</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-4 col-sm-12">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Dota.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span>
-                        Dota 2
-                      </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">
-                        Valve
-                      </p>
-                      <p class="mycard-text fw-b">Free</p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section-footer gap-sm txt-r">
-              <a href="">See more ...</a>
-            </div>
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- footer -->
+  <!-- footer -->
 
-    <div class="footer bg-d2">
-      <div class="row myrow">
-        <div class="brand col-4 mt-sm txt-c">
-          <span class="c-white large-size fw-b">ZTEAM</span><br />
-          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
-          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
-        </div>
-        <div class="col-3 mt-sm">
-          <span class="c-white medium-size">Learn More</span><br />
-          <ul class="pt-xs">
-            <li><a>About Us</a></li>
-            <li><a>Terms & Condition</a></li>
-            <li><a>Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="col-3 c-white mt-sm">
-          <span class="c-white medium-size">Follow Us</span><br />
-          <ul class="pt-xs">
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-          </ul>
-        </div>
-        <div class="col-2 c-white mt-sm">
-          <span class="c-white medium-size">Orther Site</span><br />
-          <ul class="pt-xs">
-            <li><a>PlayStation</a></li>
-            <li><a>ZForum</a></li>
-            <li><a>ZRealms</a></li>
-          </ul>
-        </div>
+  <div class="footer bg-d2">
+    <div class="row myrow">
+      <div class="brand col-4 mt-sm txt-c">
+        <span class="c-white large-size fw-b">ZTEAM</span><br />
+        <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+        <span class="c-dark-2 small-size">Hotline: 0777888999</span>
       </div>
-      <div class="row myrow">
-        <div class="col-12 txt-c c-dark-1">
-          © 2020 Copyright: zteamgameheaven.com
-        </div>
+      <div class="col-3 mt-sm">
+        <span class="c-white medium-size">Learn More</span><br />
+        <ul class="pt-xs">
+          <li><a>About Us</a></li>
+          <li><a>Terms & Condition</a></li>
+          <li><a>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-3 c-white mt-sm">
+        <span class="c-white medium-size">Follow Us</span><br />
+        <ul class="pt-xs">
+          <li><a>Facebook</a></li>
+          <li><a>Twitter</a></li>
+          <li><a>Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-2 c-white mt-sm">
+        <span class="c-white medium-size">Orther Site</span><br />
+        <ul class="pt-xs">
+          <li><a>PlayStation</a></li>
+          <li><a>ZForum</a></li>
+          <li><a>ZRealms</a></li>
+        </ul>
       </div>
     </div>
+    <div class="row myrow">
+      <div class="col-12 txt-c c-dark-1">
+        © 2020 Copyright: zteamgameheaven.com
+      </div>
+    </div>
+  </div>
 
-    <!-- jquery -->
+  <!-- jquery -->
 
-    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../JQuery/slidemenu.js"></script>
-    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../JQuery/Storeeffect.js"></script>
-    <script src="../JQuery/slidemenu.js"></script>
-    <script src="./../JQuery/header.js"></script>
-  </body>
+  <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../JQuery/slidemenu.js"></script>
+  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../JQuery/Storeeffect.js"></script>
+  <script src="../JQuery/slidemenu.js"></script>
+  <script src="../JQuery/header.js"></script>
+  <script src="../JQuery/bottom_shopping_cart.js"></script>
+</body>
+
 </html>
