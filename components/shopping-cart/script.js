@@ -8,4 +8,4 @@ window.onscroll = function () {
     } else {
         mybutton.style.display = "none";
     }
-};
+}; 

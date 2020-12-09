@@ -1,19 +1,19 @@
 #bottom-shopping-cart {
     display: none;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 99;
+    top: 5px;
+    right: 10px;
+    z-index: 2999;
     border: none;
     outline: none;
     background-color: #171A21;
     color: white;
-    padding: 12px;
+    padding: 10px;
     font-size: 20px;
     border-radius: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 #bottom-shopping-cart i {
-    opacity: 0.5;
+    opacity: 0.8;
 }
