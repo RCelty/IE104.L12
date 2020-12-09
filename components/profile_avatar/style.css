@@ -1,8 +1,5 @@
 main {
     padding: 20px 0;
-}
-
-main section {
     width: 100%;
 }
 
@@ -98,4 +95,5 @@ main section .profile-pic .pic:hover .lx-btn {
 
 main section #change-avatar{
     display: none;
+    
 }
