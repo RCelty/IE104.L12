@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../components/body/style.css" />
     <link rel="stylesheet" href="../components/card/style.css" />
     <link rel="stylesheet" href="../components/slide menu/style.css" />
-    <link rel="stylesheet" href="../components/usename dropdown/style.css">
-    <link rel="stylesheet" href="../components/search box/style.css">
+    <link rel="stylesheet" href="../components/usename dropdown/style.css" />
+    <link rel="stylesheet" href="../components/search box/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -28,23 +28,22 @@
         <div class="heading-right c-white">
           <span class="username">
             <div id="navthing">
-              <h2><a href="#" id="Username">
-                Đỗ Đình Ngọc 
-              </a>
-              <span class="medium-size">|</span>
-              <i class="fas fa-shopping-cart large-size">
-                <span class="counter"></span>
-              </i>
-            </h2>
-            <div class="userdropdown">
-              <div class="arrow-up small-size"></div>
-              <div class="formholder">
+              <h2>
+                <a href="#" id="Username"> Đỗ Đình Ngọc </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
                   <fieldset>
                     <input type="button" value="Profile" />
                     <input type="button" value="Logout" />
                   </fieldset>
+                </div>
               </div>
-            </div>
             </div>
           </span>
         </div>
@@ -55,81 +54,91 @@
           <label for="navBar-icon" class="navBar-icon">
             <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
           </label>
-          <input type="checkbox" id="navBar-icon" role="button">
-        <ul class="menu medium-size" id="dropdown-menu">
-              <li><a href="#">Home</a></li>
-              <li ><a href="#">Work<i class="arrow fw-b"></i></a>
-                  <ul class="drop">
-                      <li><a href="#">Art</a></li>
-                      <li><a href="#">Photography</a></li>
-                      <li><a href="#">Audio</a></li>
-                      <li><a href="#">Films</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Contact<i class="arrow"></i></a>
-                  <ul class="drop">
-                      <li><a href="#">Email</a></li>
-                      <li><a href="#">Phone</a></li>
-                  </ul>
-              </li>
-              <li class="search">
-                <form onsubmit="event.preventDefault();" role="search">
-                  <label for="search">Search for stuff</label>
-                  <input id="search" type="search" placeholder="Search..." autofocus required />
-                  <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>    
-                </form>
-              </li>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Work<i class="arrow fw-b"></i></a>
+              <ul class="drop">
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Films</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact<i class="arrow"></i></a>
+              <ul class="drop">
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Phone</a></li>
+              </ul>
+            </li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
           </ul>
-      </nav>
+        </nav>
       </div>
     </div>
 
     <!-- body -->
 
-    <div class="body">
+    <div class="page-body">
       <div class="row myrow">
         <div class="col-lg-3 col-sm-6 txt-c">
           <nav class="slidemenu">
             <ul class="sticky">
-                <li>
-                    <a href="#Action">Action</a>
-                </li>
-                  <hr >
-                <li>
-                    <a href="#Adventure">Adventure</a>
-                </li>
-                  <hr >
-                <li>
-                    <a href="#RPG">RPG</a>
-                </li> 
-                  <hr>
-                <li>
-                    <a href="#Platformer">Platformer</a>
-                </li> 
-                  <hr > 
-                <li>
+              <li>
+                <a href="#Action">Action</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Adventure">Adventure</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#RPG">RPG</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Platformer">Platformer</a>
+              </li>
+              <hr />
+              <li>
                 <a href="#Casual">Casual</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Indie"> Indie</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Racing"> Racing</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Simulator"> Simulation</a>
-                </li> 
-                  <hr > 
-                <li>
-                  <a href="#Sports"> Sports</a>
-                </li> 
-                  <hr> 
-                <li>
-                  <a href="#Strategy"> Strategy</a>
-                </li>              
+              </li>
+              <hr />
+              <li>
+                <a href="#Indie"> Indie</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Racing"> Racing</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Simulator"> Simulation</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Sports"> Sports</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Strategy"> Strategy</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -694,9 +703,7 @@
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Moon Studios
-                      </p>
+                      <p class="mycard-text">Moon Studios</p>
                       <p class="mycard-text fw-b">$8.11</p>
                     </div>
                     <button class="addbutton">
@@ -722,17 +729,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Phasmophobia
-                      </span>
+                      <span> Phasmophobia </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Kinetic Games
-                      </p>
+                      <p class="mycard-text">Kinetic Games</p>
                       <p class="mycard-text fw-b">$6.90</p>
                     </div>
                     <button class="addbutton">
@@ -758,17 +761,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Risk of Rain 2
-                      </span>
+                      <span> Risk of Rain 2 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Hopoo Games
-                      </p>
+                      <p class="mycard-text">Hopoo Games</p>
                       <p class="mycard-text fw-b">$9.49</p>
                     </div>
                     <button class="addbutton">
@@ -805,17 +804,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Need for Speed™ Heat
-                      </span>
+                      <span> Need for Speed™ Heat </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Ghost Games
-                      </p>
+                      <p class="mycard-text">Ghost Games</p>
                       <p class="mycard-text fw-b">$71.19</p>
                     </div>
                     <button class="addbutton">
@@ -841,17 +836,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        F1® 2020
-                      </span>
+                      <span> F1® 2020 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Codemasters
-                      </p>
+                      <p class="mycard-text">Codemasters</p>
                       <p class="mycard-text fw-b">$20.71</p>
                     </div>
                     <button class="addbutton">
@@ -877,17 +868,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Mad Max
-                      </span>
+                      <span> Mad Max </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Avalanche Studios
-                      </p>
+                      <p class="mycard-text">Avalanche Studios</p>
                       <p class="mycard-text fw-b">$8.11</p>
                     </div>
                     <button class="addbutton">
@@ -924,17 +911,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Microsoft Flight Simulator
-                      </span>
+                      <span> Microsoft Flight Simulator </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Xbox Game Studios
-                      </p>
+                      <p class="mycard-text">Xbox Game Studios</p>
                       <p class="mycard-text fw-b">$57.82</p>
                     </div>
                     <button class="addbutton">
@@ -960,17 +943,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Bus Simulator 18
-                      </span>
+                      <span> Bus Simulator 18 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        astragon Entertainment
-                      </p>
+                      <p class="mycard-text">astragon Entertainment</p>
                       <p class="mycard-text fw-b">$24.59</p>
                     </div>
                     <button class="addbutton">
@@ -996,17 +975,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        American Truck Simulator
-                      </span>
+                      <span> American Truck Simulator </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        SCS Software
-                      </p>
+                      <p class="mycard-text">SCS Software</p>
                       <p class="mycard-text fw-b">$15.10</p>
                     </div>
                     <button class="addbutton">
@@ -1043,17 +1018,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        EA SPORTS™ FIFA 21
-                      </span>
+                      <span> EA SPORTS™ FIFA 21 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Electronic Arts
-                      </p>
+                      <p class="mycard-text">Electronic Arts</p>
                       <p class="mycard-text fw-b">$60.41</p>
                     </div>
                     <button class="addbutton">
@@ -1079,17 +1050,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Football Manager 2021
-                      </span>
+                      <span> Football Manager 2021 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        SEGA
-                      </p>
+                      <p class="mycard-text">SEGA</p>
                       <p class="mycard-text fw-b">$34.09</p>
                     </div>
                     <button class="addbutton">
@@ -1115,17 +1082,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        PGA TOUR 2K21
-                      </span>
+                      <span> PGA TOUR 2K21 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        2K
-                      </p>
+                      <p class="mycard-text">2K</p>
                       <p class="mycard-text fw-b">$43.15</p>
                     </div>
                     <button class="addbutton">
@@ -1162,17 +1125,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Total War: THREE KINGDOMS
-                      </span>
+                      <span> Total War: THREE KINGDOMS </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        SEGA
-                      </p>
+                      <p class="mycard-text">SEGA</p>
                       <p class="mycard-text fw-b">$37.97</p>
                     </div>
                     <button class="addbutton">
@@ -1198,17 +1157,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Crusader Kings III
-                      </span>
+                      <span> Crusader Kings III </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Paradox Interactive
-                      </p>
+                      <p class="mycard-text">Paradox Interactive</p>
                       <p class="mycard-text fw-b">$16.83</p>
                     </div>
                     <button class="addbutton">
@@ -1234,17 +1189,13 @@
                       class="mycard-title"
                       onclick="location.href='./test.html';"
                     >
-                      <span>
-                        Dota 2
-                      </span>
+                      <span> Dota 2 </span>
                     </div>
                     <div
                       class="mycard-detail"
                       onclick="location.href='./test.html';"
                     >
-                      <p class="mycard-text">
-                        Valve
-                      </p>
+                      <p class="mycard-text">Valve</p>
                       <p class="mycard-text fw-b">Free</p>
                     </div>
                     <button class="addbutton">
@@ -1309,13 +1260,8 @@
 
     <!-- jquery -->
 
-    <script src="../../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../JQuery/slidemenu.js"></script>
     <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../JQuery/Storeeffect.js"></script>
-    <script src="../JQuery/slidemenu.js"></script>
-    <script src="./../JQuery/header.js"></script>
+    <script src="../components/slide menu/script.js"></script>
+    <script src="../components/card/script.js"></script>
   </body>
 </html>
