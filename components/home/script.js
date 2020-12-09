@@ -78,3 +78,41 @@ $(function() {
     // });
   });
 });
+
+// Multislider cards
+
+const cardsection = document.querySelectorAll(".cardgroup-section");
+const prevbtn = document.querySelector(".prev-btn");
+const forwbtn = document.querySelector(".forw-btn");
+
+let currentIndex1 = 0;
+let time1 = 5000; // default time for auto slideshow
+
+const sectionPos = (startPos1, index1) => {
+  for (let i = startPos1; i < cardsection.length; i++) {
+    cardsection[i].style.display = "none";
+  }
+  cardsection[index1].style.display = "flex";
+};
+
+sectionPos(1, 0);
+
+prevbtn.addEventListener("click", function(){
+  console.log(cardsection.length)
+  currentIndex1 <= 0 ? currentIndex1 = cardsection.length-1 : currentIndex1--;
+  sectionPos(0, currentIndex1);
+});
+
+forwbtn.addEventListener("click", function(){
+  currentIndex1 >= cardsection.length-1 ? currentIndex1 = 0 : currentIndex1++;
+  sectionPos(0, currentIndex1);
+});
+
+// const startAutoSlide1 = () => {
+//   setInterval(() => {
+//     currentIndex1 >= cardsection.length-1 ? currentIndex1 = 0 : currentIndex1++;
+//     sectionPos(0, currentIndex1);
+//   }, time1);
+// };
+
+// startAutoSlide1(); // Start the slideshow
