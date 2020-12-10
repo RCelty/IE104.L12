@@ -12,7 +12,7 @@
   color: #444f5e;
 }
 .c-dark-1 {
-  color: #7c848d;
+  color: #e8f3ff;
 }
 .c-dark-2 {
   color: #c0c4c8;
@@ -91,6 +91,9 @@
 }
 .xsmall-size {
   font-size: 12px !important;
+}
+.txt-upper {
+  text-transform: uppercase;
 }
 .hidden {
   overflow: hidden !important;
@@ -300,7 +303,7 @@
   vertical-align: bottom;
 }
 
-/* link, button, input */
+/* link, button, input, ... */
 .mylink {
   color: #7c848d;
   text-decoration: none;
@@ -313,26 +316,28 @@
 .mybutton {
   background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-size: 330% 100%;
-  width: 200px;
-  font-size: 15px;
-  line-height: 30px;
-  cursor: pointer;
 }
+
 .mybutton:hover {
   background: #0069d9;
 }
 .mycancelbutton {
   background: transparent;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.mycancelbutton:hover {
+  background: rgb(23, 26, 33);
+}
+.mybutton,
+.mycancelbutton {
+  border-radius: 25px;
   background-size: 330% 100%;
   width: 200px;
   font-size: 15px;
   line-height: 30px;
   cursor: pointer;
-}
-.mycancelbutton:hover {
-  background: rgb(23, 26, 33);
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 .mybutton,
 .mycancelbutton span {
