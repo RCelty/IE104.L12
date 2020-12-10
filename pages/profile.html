@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../components/card/style.css" />
   <link rel="stylesheet" href="../components/slide menu/style.css" />
   <link rel="stylesheet" href="../components/profile_avatar/style.css">
+  <link rel="stylesheet" href="../components/profile_infomation/style.css">
 </head>
 
 <body>
@@ -93,7 +94,7 @@
         <div class="has-dflex-center profile-avatar">
           <div class="lx-row align-stretch">
             <div class="profile-pic">
-              <div class="pic" ondragover="$(this).trigger('hover'); return false;">
+              <div class="pic">
                 <img src="../images/EreshkigalAF.png" id="avatar" alt="" width="4024" height="6048" loading="lazy">
                 <a class="lx-btn"><i class="fas fa-camera-retro"
                     onclick="$('#change-avatar').trigger('click'); return true;">
@@ -106,9 +107,40 @@
         </div>
       </div>
       <div class="col-lg-8 col-sm-6">
-        <main class="has-dflex-center">
-
-        </main>
+        <div class="profile-user-info">
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Username </div>
+            <div class="profile-info-value">
+              <span>wanbirosi</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Location </div>
+            <div class="profile-info-value">
+              <i class="fa fa-map-marker-alt c-blue" aria-hidden="true"></i>
+              <span>TP.HCM</span>
+              <span>VIET NAM</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Age </div>
+            <div class="profile-info-value">
+              <span>20</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Joined </div>
+            <div class="profile-info-value">
+              <span>30/06/2019</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> My Game </div>
+            <div class="profile-info-value">
+              <span>8</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
