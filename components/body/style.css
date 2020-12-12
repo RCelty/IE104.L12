@@ -1,3 +1,6 @@
 body {
   background-color: rgb(18, 18, 18, 0.9);
 }
+input:focus {
+  outline: none;
+}

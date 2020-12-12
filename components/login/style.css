@@ -4,6 +4,9 @@ body {
   width: 100%;
   /* position: relative; */
 }
+input:focus {
+  outline: none;
+}
 .loginheader {
   height: 150px;
 }
