@@ -23,4 +23,4 @@ function stickIt() {
     $('.cloned').hide();
     $('.original').css('visibility','visible');
   }
-}
+} 

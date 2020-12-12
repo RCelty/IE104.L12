@@ -6,16 +6,18 @@
 .decription
 {
     line-height: 1.5em;
-    font-size: 14px;
+    font-size: 15px;
     overflow: hidden;
     font-family: "Motiva Sans", Sans-serif;
     font-weight: normal;
     text-align: left;
+    color: rgb(225,225,225,0.6);
 }
 body
 {
     margin: 0px;
     padding: 0px;
+    background-color: rgb(18,18,18,0.9);
 }
 .icon
 {
@@ -25,4 +27,181 @@ body
 .infor
 {
     font-size: 10;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+  margin-left: 100px;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 240px;
+  height: 144px;
+  background: green;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.ImgThumbnail {
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  height: 144px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modalImage {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 60%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .modalImage {
+     width: 100%;
+  }
+}
+.description
+{
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+  font-size: 14px;
+  color: rgb(225,225,225,0.6);
+}
+#more {display: none;}
+.readmore
+{
+  background: url(/images/SteamIcon.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  color: #537ca6;
+  font-size: 10px;
+  padding-right: 12px;
+}
+.sys-content
+{
+   display: flex;
+   width: 100%;
+   max-width: 964px;
+   position: relative;
+   font-size: 12px;
+  
+}
+.recommened-sys
+{
+  margin-left: 8px;
+  width: 350px;
+  float: left;
+  font-size: 13px;
+}
+.minium-sys
+{
+  float: left;
+  width: 350px;
+  font-size: 13px;
+}
+.System-Require
+{
+  color: rgb(225,225,225,0.6);
+}
+.relate-game
+{
+
+ color:  rgb(225,225,225,0.6);
 }
