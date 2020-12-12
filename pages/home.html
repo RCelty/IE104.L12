@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="../components/footer/style.css" />
     <link rel="stylesheet" href="../components/body/style.css" />
     <link rel="stylesheet" href="../components/card/style.css" />
+    <link rel="stylesheet" href="../components/section/style.css" />
     <link rel="stylesheet" href="../components/home/style.css" />
+    <link rel="stylesheet" href="../components/banner/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -24,83 +26,69 @@
       <div class="heading c-w">
         <!-- <span class="logo"><img src="" alt="logo" /></span> -->
         <div class="heading-right c-white">
-          <span class="username">Đỗ Đình Ngọc</span> |
-          <span class="fa-2x">
-            <i class="fas fa-shopping-cart">
-              <span class="counter"></span>
-            </i>
+          <span class="username">
+            <div id="navthing">
+              <h2>
+                <a href="#" id="Username"> Đỗ Đình Ngọc </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
+                  <fieldset>
+                    <input type="button" value="Profile" />
+                    <input type="button" value="Logout" />
+                  </fieldset>
+                </div>
+              </div>
+            </div>
           </span>
         </div>
       </div>
       <div class="header-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-d2">
-          <a class="navbar-brand large-size fw-b" href="#">ZTeam</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
-          </div>
+        <nav class="navigation">
+          <a href="#" class="logo large-size fw-b">Zteam</a>
+          <label for="navBar-icon" class="navBar-icon">
+            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+          </label>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Work<i class="arrow fw-b"></i></a>
+              <ul class="drop">
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Films</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact<i class="arrow"></i></a>
+              <ul class="drop">
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Phone</a></li>
+              </ul>
+            </li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -138,6 +126,8 @@
       <!-- Page content  -->
 
       <div class="page-body-content m-hor-md">
+        <!-- Sale off section -->
+
         <div class="section">
           <div
             class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
@@ -186,11 +176,24 @@
           <div class="section-footer gap-sm txt-r">
             <a href="">See more ...</a>
           </div>
-          <div class="cardgroup">
-            <div class="cardgroup-header large-size pl-sm fw-b">
-              <p><i class="fas fa-gift"></i> Free Games</p>
+        </div>
+
+        <!-- Free games -->
+
+        <div class="cardgroup">
+          <div class="cardgroup-header large-size pl-sm fw-b">
+            <p><i class="fas fa-gift"></i> Free Games</p>
+            <div class="cardgroup-header-btn">
+              <div class="prev-btn">
+                <i class="far fa-caret-square-left"></i>
+              </div>
+              <div class="forw-btn ml-xs">
+                <i class="far fa-caret-square-right"></i>
+              </div>
             </div>
-            <div class="row myrow">
+          </div>
+          <div class="cardgroup-body">
+            <div class="row myrow cardgroup-section">
               <div class="cardgroup-card col-lg-4 col-sm-12">
                 <div class="cardgroup-card-inner">
                   <img
@@ -249,7 +252,7 @@
                 <div class="cardgroup-card-inner">
                   <img
                     class="cardgroup-card-img"
-                    src="../images/CSGO.jpg"
+                    src="../images/Dota.png"
                     alt="Card image cap"
                     onclick="location.href='./test.html';"
                   />
@@ -259,7 +262,7 @@
                   <div class="cardgroup-card-body row myrow">
                     <div class="col-7">
                       <div class="cardgroup-card-title">
-                        <span> Counter-Strike: Global Offensive </span>
+                        <span> Dota 2 </span>
                       </div>
                       <p class="cardgroup-card-text">Valve</p>
                       <p class="cardgroup-card-text">From Dec 19 to Jan 2</p>
@@ -273,10 +276,399 @@
                 </div>
               </div>
             </div>
+            <div class="row myrow cardgroup-section">
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/Saunautica.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-statusbar">
+                    <span>Free now</span>
+                  </div>
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>...</span>
+                      </div>
+                      <p class="cardgroup-card-text">...</p>
+                      <p class="cardgroup-card-text">...</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/Saunautica.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-statusbar">
+                    <span>Free now</span>
+                  </div>
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>...</span>
+                      </div>
+                      <p class="cardgroup-card-text">...</p>
+                      <p class="cardgroup-card-text">...</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/Saunautica.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-statusbar">
+                    <span>Free now</span>
+                  </div>
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>...</span>
+                      </div>
+                      <p class="cardgroup-card-text">...</p>
+                      <p class="cardgroup-card-text">...</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top sellers -->
+
+        <div class="section">
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Top Sellers</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+
+        <!-- Recently updated -->
+
+        <div class="section">
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Recently Updated</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
+          </div>
+        </div>
+
+        <!-- Hot news -->
+
+        <div class="banner">
+          <div class="banner-inner row myrow">
+            <div class="banner-contents col-lg-4 col-sm-6">
+              <div class="banner-contents-title">
+                <h2>FORNITE</h2>
+              </div>
+              <div class="banner-contents-text">
+                Shine like a diamond with the Diamond Diva pack. Includes an
+                outfit, a back bling, a pickaxe and 600 V-Bucks.
+              </div>
+              <div class="banner-button pt-sm">
+                <input
+                  type="button"
+                  name="learnmore"
+                  id="learnmore"
+                  value="LEARN MORE"
+                />
+              </div>
+            </div>
+            <div class="banner-img-wrap col-lg-8 col-sm-6">
+              <img
+                src="../images/14br-diamonddiva-egs-breaker-1280x956-692472118.png"
+                alt="banner"
+              />
+            </div>
+          </div>
+          <!-- popup -->
+          <div class="modal-wrapper">
+            <div class="modal">
+              <div class="head">
+                <a class="btn-close trigger">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="modal-contents">
+                <div class="modal-contents-title">
+                  <h2>The Diamond Diva Pack</h2>
+                </div>
+                <div class="modal-contents-text">
+                  <div>
+                    Shine like a diamond with the Diamond Diva pack. Includes
+                    the following:
+                  </div>
+                  <ul>
+                    <li>600 V-Bucks</li>
+                    <li>Diamond Diva Outfit</li>
+                    <li>Shine Pack Back Bling</li>
+                    <li>6-Carat Cutter Pickaxe</li>
+                  </ul>
+                  <div class="description">
+                    V-Bucks are in-game currency that can be spent in Fortnite
+                    Battle Royale, Creative, and Save the World modes. In Battle
+                    Royale and Creative you can purchase new customization items
+                    like New Outfits, Gliders, Pickaxes, Emotes, and Wraps! In
+                    Save the World, you can purchase X-Ray Llamas that contain
+                    weapon and trap schematics, plus new Heroes, and more!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Most popular -->
+
+        <div class="section">
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Most popular</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/"
+                  alt="Card image cap"
+                  onclick="location.href='./test.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='./test.html';"
+                  >
+                    <span> ... </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='./test.html';"
+                  >
+                    <p class="mycard-text">...</p>
+                    <p class="mycard-text fw-b">...</p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-footer gap-sm txt-r">
+            <a href="">See more ...</a>
           </div>
         </div>
       </div>
     </div>
+
     <!-- footer -->
 
     <div class="footer bg-d2">
@@ -321,6 +713,7 @@
     <!-- jquery -->
 
     <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../JQuery/Homeeffect.js"></script>
+    <script src="../components/home/script.js"></script>
+    <script src="../components/banner/script.js"></script>
   </body>
 </html>

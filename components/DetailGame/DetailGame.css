@@ -154,7 +154,6 @@ h1 {
   width: 100%;
   max-width: 964px;
   position: relative;
-  margin-left: 100px;
   font-size: 14px;
   color: rgb(225,225,225,0.6);
 }
@@ -181,21 +180,20 @@ h1 {
    width: 100%;
    max-width: 964px;
    position: relative;
-   margin-left: 100px;
    font-size: 12px;
   
 }
 .recommened-sys
 {
   margin-left: 8px;
-  width: 300px;
+  width: 350px;
   float: left;
   font-size: 13px;
 }
 .minium-sys
 {
   float: left;
-  width: 300px;
+  width: 350px;
   font-size: 13px;
 }
 .System-Require
@@ -204,5 +202,6 @@ h1 {
 }
 .relate-game
 {
-  margin-left: 30px;
+
+ color:  rgb(225,225,225,0.6);
 }
