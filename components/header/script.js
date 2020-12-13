@@ -7,7 +7,6 @@ $('input[type="button"]').mouseup(function () {
 
 $('#Username').click(function () {
     $('.userdropdown').fadeToggle('slow');
-    $(this).toggleClass('c-blue');
 });
 
 $(document).mouseup(function (e) {
@@ -18,7 +17,6 @@ $(document).mouseup(function (e) {
         container.has(e.target).length === 0) // ... nor a descendant of the container
     {
         container.hide();
-        $('#Username').removeClass('c-blue');
     }
 });
 

@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="../components/slide menu/style.css" />
   <link rel="stylesheet" href="../components/profile_avatar/style.css">
   <link rel="stylesheet" href="../components/profile_infomation/style.css">
+  <link rel="stylesheet" href="../components/profile-game/style.css">
 </head>
 
 <body>
@@ -90,6 +91,7 @@
   <!-- body -->
 
   <div class="body">
+    <!-- Avatar & info -->
     <div class="row myrow">
       <div class="col-lg-4 col-sm-6 txt-c">
         <div class="has-dflex-center profile-avatar">
@@ -97,12 +99,12 @@
             <div class="profile-pic">
               <div class="pic">
                 <img src="../images/EreshkigalAF.png" id="avatar" width="4024" height="6048" loading="lazy">
-                <a class="lx-btn"><i class="fas fa-camera-retro"
-                    onclick="$('#change-avatar').trigger('click'); return true;">
+                <a class="lx-btn" onclick="$('#change-avatar').trigger('click'); return true;"><i
+                    class="fas fa-camera-retro">
                   </i>&nbsp;&nbsp;Change your profile picture.</a>
                 <input type="file" id="change-avatar">
               </div>
-              <h1 class="username">wanbirosi</h1>
+              <h1 class="username">Đỗ Đình Ngọc</h1>
             </div>
           </div>
         </div>
@@ -112,7 +114,13 @@
           <div class="profile-info-row">
             <div class="profile-info-name"> Username </div>
             <div class="profile-info-value">
-              <span>wanbirosi</span>
+              <span>Đỗ Đình Ngọc</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Email </div>
+            <div class="profile-info-value">
+              <span>wanbirosi1@gmail.com</span>
             </div>
           </div>
           <div class="profile-info-row">
@@ -136,62 +144,207 @@
             </div>
           </div>
           <div class="profile-info-row">
-            <div class="profile-info-name"> My Game </div>
+            <div class="profile-info-name"> My Games </div>
             <div class="profile-info-value">
-              <span>8</span>
+              <span>6</span>
+            </div>
+          </div>
+          <div class="profile-info-row">
+            <div class="profile-info-name"> Favourite Games </div>
+            <div class="profile-info-value">
+              <span>16</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer -->
+    <!-- Favourite Games -->
 
-  <div class="footer bg-d2">
-    <div class="row myrow">
-      <div class="brand col-4 mt-sm txt-c">
-        <span class="c-white large-size fw-b">ZTEAM</span><br />
-        <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
-        <span class="c-dark-2 small-size">Hotline: 0777888999</span>
-      </div>
-      <div class="col-3 mt-sm">
-        <span class="c-white medium-size">Learn More</span><br />
-        <ul class="pt-xs">
-          <li><a>About Us</a></li>
-          <li><a>Terms & Condition</a></li>
-          <li><a>Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="col-3 c-white mt-sm">
-        <span class="c-white medium-size">Follow Us</span><br />
-        <ul class="pt-xs">
-          <li><a>Facebook</a></li>
-          <li><a>Twitter</a></li>
-          <li><a>Instagram</a></li>
-        </ul>
-      </div>
-      <div class="col-2 c-white mt-sm">
-        <span class="c-white medium-size">Orther Site</span><br />
-        <ul class="pt-xs">
-          <li><a>PlayStation</a></li>
-          <li><a>ZForum</a></li>
-          <li><a>ZRealms</a></li>
-        </ul>
+    <!-- My game -->
+    <div class="mygame limit-items">
+      <!-- Begin controller - must precede .items -->
+      <input type='checkbox' id='show-all'>
+      <label for='show-all' class='buttonupdown-show' onclick="myFunction(); $('#show-all').prop('checked', false)"><i class="fas fa-chevron-down c-white medium-size"></i></label>
+      <label for='show-all' class='buttonupdown-hide' onclick="myFunction(); $('#show-all').prop('checked', true)"><i class="fas fa-chevron-up c-white medium-size"></i></label>
+      <div class="cardgroup">
+        <div class="cardgroup-header large-size pl-sm fw-b">
+          <p><i class="fas fa-gamepad"></i> My Games</p>
+        </div>
+        <div class="cardgroup-body items">
+          <div class="row myrow cardgroup-section">
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img" src="../images/ApexLegend.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span>Apex Legend</span>
+                    </div>
+                    <p class="cardgroup-card-text">Respawn Entertainment</p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img" src="../images/CSGO.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span> Counter-Strike: Global Offensive </span>
+                    </div>
+                    <p class="cardgroup-card-text">Valve</p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img" src="../images/Dota.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span> Dota 2 </span>
+                    </div>
+                    <p class="cardgroup-card-text">Valve</p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow cardgroup-section" id="myDIV">
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img"
+                  src="../images/egs-cavestory-nicalisincstudiopixel-s1-2560x1440-633664379.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span>Cave Story+</span>
+                    </div>
+                    <p class="cardgroup-card-text">
+                      Nicalis, Inc./Studio Pixel
+                    </p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img" src="../images/poe_752x430.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span>Pillars of Eternity - Definitive Edition</span>
+                    </div>
+                    <p class="cardgroup-card-text">Obsidian Entertainment</p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardgroup-card col-lg-4 col-sm-12">
+              <div class="cardgroup-card-inner">
+                <img class="cardgroup-card-img"
+                  src="../images/egs-tyrannygoldedition-obsidianentertainment-g1a-00-1920x1080-588867121.webp"
+                  alt="Card image cap" onclick="location.href='./test.html';" />
+                <div class="cardgroup-card-body row myrow">
+                  <div class="col-7">
+                    <div class="cardgroup-card-title">
+                      <span>Tyranny - Gold Edition</span>
+                    </div>
+                    <p class="cardgroup-card-text">Obsidian Entertainment</p>
+                  </div>
+                  <div class="col-5">
+                    <button>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row myrow">
-      <div class="col-12 txt-c c-dark-1">
-        © 2020 Copyright: zteamgameheaven.com
+    <!-- footer -->
+
+    <div class="footer bg-d2">
+      <div class="row myrow">
+        <div class="brand col-4 mt-sm txt-c">
+          <span class="c-white large-size fw-b">ZTEAM</span><br />
+          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+        </div>
+        <div class="col-3 mt-sm">
+          <span class="c-white medium-size">Learn More</span><br />
+          <ul class="pt-xs">
+            <li><a>About Us</a></li>
+            <li><a>Terms & Condition</a></li>
+            <li><a>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-3 c-white mt-sm">
+          <span class="c-white medium-size">Follow Us</span><br />
+          <ul class="pt-xs">
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-2 c-white mt-sm">
+          <span class="c-white medium-size">Orther Site</span><br />
+          <ul class="pt-xs">
+            <li><a>PlayStation</a></li>
+            <li><a>ZForum</a></li>
+            <li><a>ZRealms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row myrow">
+        <div class="col-12 txt-c c-dark-1">
+          © 2020 Copyright: zteamgameheaven.com
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- jquery -->
+    <!-- jquery -->
 
-  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-  <script src="../components/header/script.js"></script>
-  <script src="../components/profile_avatar/script.js"></script>
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../components/header/script.js"></script>
+    <script src="../components/home/script.js"></script>
+    <script src="../components/profile_avatar/script.js"></script>
+    <script src="../components/profile-game/script.js"></script>
 </body>
 
 </html>

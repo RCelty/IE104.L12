@@ -235,6 +235,7 @@
 
 .heading .username fieldset {
   border: none;
+  padding: 1px;
   padding-left: 2px;
 }
 

@@ -1,0 +1,48 @@
+.mygame {
+    width: 90%;
+    margin: auto;
+}
+/* OPTIONAL */
+/* Style label as button below items */
+.limit-items {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.limit-items #show-all {
+    display: none;
+}
+
+.limit-items label[for="show-all"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: auto;
+    bottom: 28px;
+    right: 40%;
+    z-index: 500;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #292929;
+    border: 1px solid #9b8585;
+    cursor: pointer;
+    min-width: 20%;
+}
+
+.limit-items label[for="show-all"]:hover {
+    border: 1px solid #aaa;
+}
+
+/* Replace li with item selector */
+/* Replace n + 2 with limit criterion */
+.limit-items #show-all~label[for="show-all"] {
+    display: none;
+}
+
+.limit-items #show-all:checked~.buttonupdown-hide {
+    display: inline-block;
+}
+
+.limit-items #show-all:not(:checked)~.buttonupdown-show {
+    display: inline-block;
+}
+
