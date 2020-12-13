@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../components/header/style.css" />
     <link rel="stylesheet" href="../components/body/style.css" />
     <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/contact/style.css" />
+    <link rel="stylesheet" href="../components/expand_button/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -89,7 +91,49 @@
     </div>
 
     <!-- body -->
-    <div class="page-body"></div>
+    <div class="page-body">
+      <div class="btn-wrap">
+        <!-- call-btn -->
+        <div class="expand-btn-container">
+          <button class="expand-btn right-expand bg-call" id="expand-btn">
+            <i class="fas fa-3x fa-phone-alt"></i>
+          </button>
+          <div class="data right-expand bg-call-o">
+            <span><a>Hotline: 0777888999</a></span>
+          </div>
+        </div>
+        <hr class="bg-w" />
+        <!-- fb-btn -->
+        <div class="expand-btn-container">
+          <button class="expand-btn left-expand bg-fb" id="expand-btn">
+            <i class="fab fa-3x fa-facebook-f"></i>
+          </button>
+          <div class="data left-expand bg-fb-o">
+            <span><a>https://www.facebook.com/zteamgameheaven</a></span>
+          </div>
+        </div>
+        <hr class="bg-w" />
+        <!-- twitter-btn -->
+        <div class="expand-btn-container">
+          <button class="expand-btn right-expand bg-tt" id="expand-btn">
+            <i class="fab fa-3x fa-twitter"></i>
+          </button>
+          <div class="data right-expand bg-tt-o">
+            <span><a>https://twitter.com/zteamgameheaven</a></span>
+          </div>
+        </div>
+        <hr class="bg-w" />
+        <!-- mail-btn -->
+        <div class="expand-btn-container">
+          <button class="expand-btn left-expand bg-mail" id="expand-btn">
+            <i class="far fa-3x fa-envelope"></i>
+          </button>
+          <div class="data left-expand bg-mail-o">
+            <span><a>Zteam@mail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
 
@@ -136,5 +180,6 @@
     <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="../components/header/script.js"></script>
     <script src="../components/card/script.js"></script>
+    <script src="../components/expand_button/script.js"></script>
   </body>
 </html>
