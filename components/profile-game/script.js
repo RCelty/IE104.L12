@@ -1,13 +1,30 @@
 $(document).ready(function(){
-    $("#myDIV").hide();
-    $("#show-all").prop('checked', false);
+    $("#myDIV1").hide();
+    $("#myDIV2").hide();
+    $("#show-all-favourite").prop('checked', false);
+    $("#show-all-mygame").prop('checked', false);
 });
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
+function myFunction(tagname) {
+    var a = "#" + tagname;
+    console.log(a);
+    var x = document.getElementById(tagname);
+
     if (x.style.display === "none") {
-        $("#myDIV").show();
+        $(a).show();
     } else {
-        $("#myDIV").hide();
+        $(a).hide();
     }
 }
+
+$(".buttonupdown-hide1").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".favourite").offset().top
+    }, 1000);
+});
+
+$(".buttonupdown-hide2").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".mygame").offset().top
+    }, 1000);
+});

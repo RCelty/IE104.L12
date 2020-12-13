@@ -1,19 +1,23 @@
-.mygame {
-    width: 90%;
-    margin: auto;
-}
+/* .Hungcustom{
+    margin-bottom: 20px;
+} */
+
 /* OPTIONAL */
 /* Style label as button below items */
 .limit-items {
     position: relative;
     padding-bottom: 40px;
+    width: 90%;
+    margin: auto;
 }
 
-.limit-items #show-all {
+.limit-items #show-all-mygame,
+.limit-items #show-all-favourite{
     display: none;
 }
 
-.limit-items label[for="show-all"] {
+.limit-items label[for="show-all-mygame"],
+.limit-items label[for="show-all-favourite"] {
     position: absolute;
     box-sizing: border-box;
     width: auto;
@@ -23,26 +27,36 @@
     text-align: center;
     border-radius: 100%;
     background-color: #292929;
-    border: 1px solid #9b8585;
+    border: 2px solid #9b8585;
     cursor: pointer;
     min-width: 20%;
 }
 
-.limit-items label[for="show-all"]:hover {
-    border: 1px solid #aaa;
+.limit-items label[for="show-all-mygame"]:hover,
+.limit-items label[for="show-all-favourite"]:hover {
+    border: 2px solid #aaa;
 }
 
-/* Replace li with item selector */
-/* Replace n + 2 with limit criterion */
-.limit-items #show-all~label[for="show-all"] {
+.favourite #show-all-favourite~label[for="show-all-favourite"] {
     display: none;
 }
 
-.limit-items #show-all:checked~.buttonupdown-hide {
+.favourite #show-all-favourite:checked~.buttonupdown-hide1 {
     display: inline-block;
 }
 
-.limit-items #show-all:not(:checked)~.buttonupdown-show {
+.favourite #show-all-favourite:not(:checked)~.buttonupdown-show1 {
     display: inline-block;
 }
 
+.mygame #show-all-mygame~label[for="show-all-mygame"] {
+    display: none;
+}
+
+.mygame #show-all-mygame:checked~.buttonupdown-hide2 {
+    display: inline-block;
+}
+
+.mygame #show-all-mygame:not(:checked)~.buttonupdown-show2 {
+    display: inline-block;
+}
