@@ -67,6 +67,14 @@
   right: 0;
 }
 
+/* background-color */
+
+.bg-map {
+  background-color: rgb(221, 53, 43);
+}
+.bg-map-o {
+  background-color: rgb(221, 53, 43, 0.6);
+}
 .bg-call {
   background-color: rgb(44, 221, 68);
 }
