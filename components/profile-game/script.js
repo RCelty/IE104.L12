@@ -33,7 +33,13 @@ $(".buttonupdown-hide2").click(function() {
 function dislike(tagname){
     var a = "#" + tagname;
     $(a).delay(300).hide(600);
-    if (!$(".myDIV1:visible").length)
-        $(".favourite div.col-lg-3").slice(position - 1 , position).removeClass("myDIV1").delay(900).show(600);
+    if(!$("#show-all-favourite").is(":checked")){
+        if (!$("a").hasClass(".myDIV1"))
+            $(".favourite div.col-lg-3").slice(position - 1 , position).removeClass("myDIV1").delay(900).show(600);
+    }
+    else{
+        $(".favourite div.col-lg-3").slice(position - 1 , position).removeClass("myDIV1");
+        $(a).removeClass("myDIV1");
+    }
     position = position + 1;
 }
