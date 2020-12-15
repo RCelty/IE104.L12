@@ -1,8 +1,5 @@
-position = 4;
-
 $(document).ready(function(){
-    $(".favourite div.col-lg-3").slice( position ).hide();
-    position = position + 1;
+    $(".favourite div.col-lg-3").slice( 4 ).hide();
     $(".myDIV2").hide();
     $("#show-all-favourite").prop('checked', false);
     $("#show-all-mygame").prop('checked', false);
@@ -22,6 +19,7 @@ $(".buttonupdown-hide1").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $(".favourite").offset().top
     }, 500);
+    $(".favourite div.col-lg-3").delay(400).slice( 4 ).hide();
 });
 
 $(".buttonupdown-hide2").click(function() {
@@ -32,14 +30,20 @@ $(".buttonupdown-hide2").click(function() {
 
 function dislike(tagname){
     var a = "#" + tagname;
-    $(a).delay(300).hide(600);
+    $(a).delay(200).hide(500, function(){
+        $(a).remove()
+    });
     if(!$("#show-all-favourite").is(":checked")){
-        if (!$("a").hasClass(".myDIV1"))
-            $(".favourite div.col-lg-3").slice(position - 1 , position).removeClass("myDIV1").delay(900).show(600);
+        if (!$("a").hasClass("myDIV1")){
+            $(".favourite div.col-lg-3").slice(4 , 5).removeClass("myDIV1").delay(700).show(500);
+        }
     }
     else{
-        $(".favourite div.col-lg-3").slice(position - 1 , position).removeClass("myDIV1");
-        $(a).removeClass("myDIV1");
+        if (!$("a").hasClass("myDIV1")){
+            $(".favourite div.col-lg-3").slice(4 , 5).removeClass("myDIV1");
+        }
     }
-    position = position + 1;
+    console.log($(".favourite div.col-lg-3").length);
+    if($(".favourite div.col-lg-3").length <= 5)
+        $("label[for='show-all-favourite']").hide();
 }
