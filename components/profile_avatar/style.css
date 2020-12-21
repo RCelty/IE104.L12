@@ -32,7 +32,8 @@
     border-radius: 10px;
     border: 1px solid #171A21;
     background-color: rgba(51, 51, 51, 0.835);
-    margin-top: 20px
+    margin-top: 20px;
+    margin-left: 80px;
 }
 
 .profile-avatar .profile-pic .username {

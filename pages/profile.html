@@ -32,7 +32,7 @@
       <div class="heading-right c-white">
         <span class="username">
           <div id="navthing">
-            <h2><a href="#" id="Username">
+            <h2><a href="#" id="Username" class="Change-username">
                 Đỗ Đình Ngọc
               </a>
               <span class="medium-size">|</span>
@@ -44,8 +44,8 @@
               <div class="arrow-up small-size"></div>
               <div class="formholder">
                 <fieldset>
-                  <input type="button" value="Profile" />
-                  <input type="button" value="Logout" />
+                  <input type="button" value="Profile"/>
+                  <input type="button" value="Logout"/>
                 </fieldset>
               </div>
             </div>
@@ -104,7 +104,7 @@
                   </i>&nbsp;&nbsp;Change your profile picture.</a>
                 <input type="file" id="change-avatar">
               </div>
-              <h1 class="username">Đỗ Đình Ngọc</h1>
+              <h1 class="username Change-username">Đỗ Đình Ngọc</h1>
             </div>
           </div>
         </div>
@@ -114,27 +114,30 @@
           <div class="profile-info-row">
             <div class="profile-info-name"> Username </div>
             <div class="profile-info-value">
-              <span>Đỗ Đình Ngọc</span>
+              <span class="Change-username" id="default-username">Đỗ Đình Ngọc</span>
+              <input type="text" id="change-username">
             </div>
           </div>
           <div class="profile-info-row">
             <div class="profile-info-name"> Email </div>
             <div class="profile-info-value">
-              <span>wanbirosi1@gmail.com</span>
+              <span id="default-email">wanbirosi1@gmail.com</span>
+              <input type="text" id="change-email">
             </div>
           </div>
           <div class="profile-info-row">
             <div class="profile-info-name"> Location </div>
             <div class="profile-info-value">
               <i class="fa fa-map-marker-alt c-blue" aria-hidden="true"></i>
-              <span>TP.HCM</span>
-              <span>VIET NAM</span>
+              <span id="default-location">TP.HCM, VIET NAM</span>
+              <input type="text" id="change-location">
             </div>
           </div>
           <div class="profile-info-row">
             <div class="profile-info-name"> Age </div>
             <div class="profile-info-value">
-              <span>20</span>
+              <span id="default-age">20</span>
+              <input type="number" id="change-age">
             </div>
           </div>
           <div class="profile-info-row">
@@ -144,15 +147,15 @@
             </div>
           </div>
           <div class="profile-info-row">
-            <div class="profile-info-name"> My Games </div>
+            <div class="profile-info-name"> Favourite Games </div>
             <div class="profile-info-value">
-              <span>6</span>
+              <span id="Favourite-Games"></span>
             </div>
           </div>
           <div class="profile-info-row">
-            <div class="profile-info-name"> Favourite Games </div>
+            <div class="profile-info-name"> My Games </div>
             <div class="profile-info-value">
-              <span>10</span>
+              <span id="My-Games" ></span>
             </div>
           </div>
         </div>
@@ -627,9 +630,9 @@
 
     <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
     <script src="../components/header/script.js"></script>
-    <script src="../components/home/script.js"></script>
     <script src="../components/profile_avatar/script.js"></script>
     <script src="../components/profile-game/script.js"></script>
+    <script src="../components/profile_infomation/script.js"></script>
 </body>
 
 </html>

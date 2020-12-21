@@ -9,12 +9,14 @@ $('#Username').click(function () {
     $('.userdropdown').fadeToggle('slow');
 });
 
-$(document).mouseup(function (e) {
+$("a .arrow").hide();
+
+$(document).mouseup(function (event) {
     var container = $(".userdropdown");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
+    if (!container.is(event.target) // if the target of the click isn't the container...
         &&
-        container.has(e.target).length === 0) // ... nor a descendant of the container
+        container.has(event.target).length === 0) // ... nor a descendant of the container
     {
         container.hide();
     }
@@ -24,7 +26,19 @@ $(function(){
     $(window).resize(function(){
         var windowSize = $(window).innerWidth();
         if(windowSize >= 900){
+            $("a .arrow").hide();
             $('#navBar-icon').prop('checked', false);
         }
+        else{
+            $("a .arrow").show();
+        }
     });
+});
+
+$('input[type="button"][value="Profile"]').click(function(){
+    window.location.href='profile.html';
+});
+
+$('input[type="button"][value="Logout"]').click(function(){
+    window.location.href='login.html';
 });
