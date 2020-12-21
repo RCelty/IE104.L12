@@ -1,25 +1,30 @@
 .profile-user-info {
+    position: relative;
     display: table;
-    width: 80%;
-    margin: 20px auto auto 0px;
-    font-size: 16px;
+    width: 87%;
+    margin: 20px auto auto 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #171A21;
+    background-color: rgba(51, 51, 51, 0.835);
+    padding: 27px;
 }
 
 @media screen and (max-width : 1000px){
     .profile-user-info {
-        width: 98%;
-        margin: 20px auto;
+        width: 100%;
     }
 }
 
 .profile-info-row {
     display: table-row;
+    position: relative;
 }
 
 .profile-info-name,
 .profile-info-value {
     display: table-cell;
-    border-top: 1px dotted #183c5c;
+    border-top: 1px dotted #667E99;
 }
 
 .profile-info-name {
@@ -28,28 +33,24 @@
     font-weight: 400;
     color: #667e99;
     background-color: transparent;
-    width: 110px;
+    width: 170px;
     vertical-align: middle;
 }
 
 .profile-info-value {
     padding: 6px 4px 6px 6px;
-}
-
-.profile-info-value>span+span:before {
-    display: inline;
-    content: ",";
-    margin-left: 1px;
-    margin-right: 3px;
-    color: #666;
-    border-bottom: 1px solid #fff;
-}
-
-.profile-info-value>span+span.editable-container:before {
-    display: none;
+    color: white;
 }
 
 .profile-info-row:first-child .profile-info-name,
 .profile-info-row:first-child .profile-info-value {
     border-top: none;
+}
+
+.profile-user-info #change-age{
+    max-width : 60px;
+}
+
+.profile-info-value input{
+    height: 30px;
 }

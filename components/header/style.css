@@ -89,7 +89,7 @@
   right: 10px;
   border-width: 5px 5px 0 5px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.3) transparent;
+  border-color: white transparent;
 }
 
 .navigation .menu li > a .arrow:after {
@@ -235,6 +235,7 @@
 
 .heading .username fieldset {
   border: none;
+  padding: 1px;
   padding-left: 2px;
 }
 
@@ -304,7 +305,6 @@
 
 .search form {
   position: relative;
-  width: 30rem;
   background-color: var(--color-brand);
   border-radius: var(--rad);
   max-width: 200px;
@@ -351,6 +351,7 @@
 .search input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
   width: 78%;
+  margin-right: 50px;
 }
 
 .search input:not(:placeholder-shown) + button {

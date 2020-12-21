@@ -1,6 +1,6 @@
 .profile-avatar {
-    padding: 20px 0;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .profile-avatar .has-dflex-center {
@@ -29,8 +29,11 @@
     flex-flow: wrap column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #171A21;
+    background-color: rgba(51, 51, 51, 0.835);
+    margin-top: 20px;
+    margin-left: 80px;
 }
 
 .profile-avatar .profile-pic .username {
@@ -38,7 +41,8 @@
     text-align: center;
     font-size: 26px;
     font-weight: 700;
-    margin-top: 25px;
+    margin-top: 20px;
+    color: white;
 }
 
 .profile-avatar .profile-pic .pic {
@@ -46,8 +50,9 @@
     height: 16rem;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
-    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #171A21;
+    /* background-color: #171A21; */
 }
 
 .profile-avatar .profile-pic .pic .lx-btn {
@@ -66,6 +71,7 @@
     text-transform: none;
     font-size: 1rem;
     color: white;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -85,5 +91,4 @@
 
 .profile-avatar #change-avatar{
     display: none;
-    
 }
