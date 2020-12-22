@@ -1,7 +1,7 @@
-$('.userdropdown .formholder input[type="button"]').mousedown(function () {
+$('.username #navthing .userdropdown .formholder input[type="button"]').mousedown(function () {
     $(this).css('background', '#08939b');
 });
-$('.userdropdown .formholder input[type="button"]').mouseup(function () {
+$('.username #navthing .userdropdown .formholder input[type="button"]').mouseup(function () {
     $(this).css('background', '#0dcfda');
 });
 
@@ -35,10 +35,10 @@ $(function(){
     });
 });
 
-$('input[type="button"][value="Profile"]').click(function(){
+$('#navthing input[type="button"][value="Profile"]').click(function(){
     window.location.href='profile.html';
 });
 
-$('input[type="button"][value="Logout"]').click(function(){
+$('#navthing input[type="button"][value="Logout"]').click(function(){
     window.location.href='login.html';
 });
