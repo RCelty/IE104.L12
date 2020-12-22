@@ -1,7 +1,7 @@
-$('input[type="button"]').mousedown(function () {
+$('.userdropdown .formholder input[type="button"]').mousedown(function () {
     $(this).css('background', '#08939b');
 });
-$('input[type="button"]').mouseup(function () {
+$('.userdropdown .formholder input[type="button"]').mouseup(function () {
     $(this).css('background', '#0dcfda');
 });
 
