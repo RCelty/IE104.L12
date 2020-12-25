@@ -1,15 +1,17 @@
+
+
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("See-more");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "READ MORE"
+      btnText.innerHTML = "See more..."
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "READ LESS"; 
+      btnText.innerHTML = "See less"; 
       moreText.style.display = "inline";
     }
   }
