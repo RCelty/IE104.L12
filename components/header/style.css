@@ -127,9 +127,10 @@
   background-color: #9494b8;
 }
 
-.navigation .menu li:hover > .drop {
+.navigation .menu li:hover .drop {
   display: block;
   padding: 1px;
+  text-align: left;
   animation: fadeInRight 0.3s ease;
 }
 
@@ -184,9 +185,10 @@
     color: white;
   }
 
-  .navigation .menu li:hover > .drop {
+  .navigation .menu li:hover .drop {
     display: block;
     position: relative;
+    text-align: left;
     animation: none;
   }
   .navigation .menu li {

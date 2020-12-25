@@ -44,8 +44,8 @@
               <div class="arrow-up small-size"></div>
               <div class="formholder">
                 <fieldset>
-                  <input type="button" value="Profile"/>
-                  <input type="button" value="Logout"/>
+                  <input type="button" value="Profile" />
+                  <input type="button" value="Logout" />
                 </fieldset>
               </div>
             </div>
@@ -62,20 +62,43 @@
         <input type="checkbox" id="navBar-icon" role="button">
         <ul class="menu medium-size" id="dropdown-menu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Work<i class="arrow fw-b"></i></a>
-            <ul class="drop">
-              <li><a href="#">Art</a></li>
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Audio</a></li>
-              <li><a href="#">Films</a></li>
+          <li id="Store-menu-hover"><a href="#">Store<i class="arrow fw-b"></i></a>
+            <ul class="drop" id="dropdown-father">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Adventure</a>
+              </li>
+              <li>
+                <a href="#">RPG</a>
+              </li>
+              <li>
+                <a href="#">Platformer</a>
+              </li>
+              <li>
+                <a href="#">Casual</a>
+              </li>
+            </ul>
+            <ul class="drop" id="dropdown-son">
+              <li>
+                <a href="#"> Indie</a>
+              </li>
+              <li>
+                <a href="#"> Racing</a>
+              </li>
+              <li>
+                <a href="#"> Simulation</a>
+              </li>
+              <li>
+                <a href="#"> Sports</a>
+              </li>
+              <li>
+                <a href="#"> Strategy</a>
+              </li>
             </ul>
           </li>
-          <li><a href="#">Contact<i class="arrow"></i></a>
-            <ul class="drop">
-              <li><a href="#">Email</a></li>
-              <li><a href="#">Phone</a></li>
-            </ul>
-          </li>
+          <li><a href="#">Contact</a></li>
           <li class="search">
             <form onsubmit="event.preventDefault();" role="search">
               <label for="search">Search for stuff</label>
@@ -155,7 +178,7 @@
           <div class="profile-info-row">
             <div class="profile-info-name"> My Games </div>
             <div class="profile-info-value">
-              <span id="My-Games" ></span>
+              <span id="My-Games"></span>
             </div>
           </div>
         </div>
@@ -166,284 +189,196 @@
     <div class="favourite limit-items">
       <!-- Begin controller - must precede .items -->
       <input type='checkbox' id='show-all-favourite'>
-      <label for='show-all-favourite' class='buttonupdown-show1' onclick="myFunction('myDIV1');"><i class="fas fa-chevron-down c-white medium-size"></i></label>
-      <label for='show-all-favourite' class='buttonupdown-hide1' onclick="myFunction('myDIV1');"><i class="fas fa-chevron-up c-white medium-size"></i></label>
+      <label for='show-all-favourite' class='buttonupdown-show1' onclick="myFunction('myDIV1');"><i
+          class="fas fa-chevron-down c-white medium-size"></i></label>
+      <label for='show-all-favourite' class='buttonupdown-hide1' onclick="myFunction('myDIV1');"><i
+          class="fas fa-chevron-up c-white medium-size"></i></label>
       <div class="cardgroup">
         <div class="cardgroup-header large-size pl-sm fw-b">
           <p><i class="fas fa-heart"></i> Favourite Games</p>
         </div>
         <div class="section">
           <div class="row myrow">
-            <div id= "like-1" class="mycard col-lg-3 col-sm-6">
+            <div id="like-1" class="mycard col-lg-3 col-sm-6">
               <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/F1.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
+                <img class="mycard-img" src="../images/F1.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
                 <div class="mycard-body">
-                  <div
-                    class="mycard-title"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-title" onclick="location.href='./test.html';">
                     <span> F1® 2020 </span>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
                     <p class="mycard-text">Codemasters</p>
                   </div>
                 </div>
                 <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-1'); $(this).css('color', 'white')"></i>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-1'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
             </div>
-            <div id= "like-2" class="mycard col-lg-3 col-sm-6">
+            <div id="like-2" class="mycard col-lg-3 col-sm-6">
               <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/Cyberpunk2077.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
+                <img class="mycard-img" src="../images/Cyberpunk2077.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
                 <div class="mycard-body">
-                  <div
-                    class="mycard-title"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-title" onclick="location.href='./test.html';">
                     <span> Cyberpunk 2077 </span>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
                     <p class="mycard-text">CD PROJEKT RED</p>
                   </div>
                 </div>
                 <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-2'); $(this).css('color', 'white')"></i>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-2'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
             </div>
-            <div id= "like-3" class="mycard col-lg-3 col-sm-6">
+            <div id="like-3" class="mycard col-lg-3 col-sm-6">
               <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/Truck.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
+                <img class="mycard-img" src="../images/Truck.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
                 <div class="mycard-body">
-                  <div
-                    class="mycard-title"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-title" onclick="location.href='./test.html';">
                     <span> American Truck Simulator </span>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
                     <p class="mycard-text">SCS Software</p>
                   </div>
                 </div>
                 <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-3'); $(this).css('color', 'white')"></i>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-3'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
             </div>
-            <div id= "like-4" class="mycard col-lg-3 col-sm-6">
+            <div id="like-4" class="mycard col-lg-3 col-sm-6">
               <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/FallGuy.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
+                <img class="mycard-img" src="../images/FallGuy.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
                 <div class="mycard-body">
-                  <div
-                    class="mycard-title"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-title" onclick="location.href='./test.html';">
                     <span> Fall Guys: Ultimate Knockout </span>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
                     <p class="mycard-text">Mediatonic</p>
                   </div>
                 </div>
                 <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-4'); $(this).css('color', 'white')"></i>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-4'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
             </div>
-              <div id= "like-5" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Hades.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Hades </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Supergiant Games</p>
-                    </div>
+            <div id="like-5" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Hades.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Hades </span>
                   </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-5'); $(this).css('color', 'white')"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Supergiant Games</p>
                   </div>
                 </div>
-              </div>
-              <div id= "like-6" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Starwar.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> STAR WARS Jedi: Fallen Order™ </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Respawn Entertainment</p>
-                    </div>
-                  </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-6'); $(this).css('color', 'white')"></i>
-                  </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-5'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-              <div id= "like-7" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Sekiro.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Sekiro™: Shadows Die Twice - GOTY Edition </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Activision</p>
-                    </div>
+            </div>
+            <div id="like-6" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Starwar.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> STAR WARS Jedi: Fallen Order™ </span>
                   </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-7'); $(this).css('color', 'white')"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Respawn Entertainment</p>
                   </div>
                 </div>
-              </div>
-              <div id= "like-8" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Saunautica.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Subnautica </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Unknown Worlds Entertainment</p>
-                    </div>
-                  </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-8'); $(this).css('color', 'white')"></i>
-                  </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-6'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-              <div id= "like-9" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Tom Clancy's Rainbow Six Siege </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Ubisoft</p>
-                    </div>
+            </div>
+            <div id="like-7" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Sekiro.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Sekiro™: Shadows Die Twice - GOTY Edition </span>
                   </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-9'); $(this).css('color', 'white')"></i>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Activision</p>
                   </div>
                 </div>
-              </div>
-              <div id= "like-10" class="mycard col-lg-3 col-sm-6 myDIV1">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/20XX.png"
-                    alt="Card image cap"
-                    onclick="location.href='./test.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='./test.html';"
-                    >
-                      <span> Buy 20XX </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='./test.html';"
-                    >
-                      <p class="mycard-text">Batterystaple Games</p>
-                    </div>
-                  </div>
-                  <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-10'); $(this).css('color', 'white')"></i>
-                  </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-7'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
+            </div>
+            <div id="like-8" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Saunautica.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Subnautica </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Unknown Worlds Entertainment</p>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-8'); $(this).css('color', 'white')"></i>
+                </div>
+              </div>
+            </div>
+            <div id="like-9" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Tom Clancy's Rainbow Six Siege </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Ubisoft</p>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-9'); $(this).css('color', 'white')"></i>
+                </div>
+              </div>
+            </div>
+            <div id="like-10" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div class="mycard-inner">
+                <img class="mycard-img" src="../images/20XX.png" alt="Card image cap"
+                  onclick="location.href='./test.html';" />
+                <div class="mycard-body">
+                  <div class="mycard-title" onclick="location.href='./test.html';">
+                    <span> Buy 20XX </span>
+                  </div>
+                  <div class="mycard-detail" onclick="location.href='./test.html';">
+                    <p class="mycard-text">Batterystaple Games</p>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-heart large-size like-game"
+                    onclick="dislike('like-10'); $(this).css('color', 'white')"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -452,8 +387,10 @@
     <div class="mygame limit-items">
       <!-- Begin controller - must precede .items -->
       <input type='checkbox' id='show-all-mygame'>
-      <label for='show-all-mygame' class='buttonupdown-show2' onclick="myFunction('myDIV2');"><i class="fas fa-chevron-down c-white medium-size"></i></label>
-      <label for='show-all-mygame' class='buttonupdown-hide2' onclick="myFunction('myDIV2');"><i class="fas fa-chevron-up c-white medium-size"></i></label>
+      <label for='show-all-mygame' class='buttonupdown-show2' onclick="myFunction('myDIV2');"><i
+          class="fas fa-chevron-down c-white medium-size"></i></label>
+      <label for='show-all-mygame' class='buttonupdown-hide2' onclick="myFunction('myDIV2');"><i
+          class="fas fa-chevron-up c-white medium-size"></i></label>
       <div class="cardgroup">
         <div class="cardgroup-header large-size pl-sm fw-b">
           <p><i class="fas fa-gamepad"></i> My Games</p>
@@ -585,54 +522,54 @@
       </div>
     </div>
   </div>
-    <!-- footer -->
+  <!-- footer -->
 
-    <div class="footer bg-d2">
-      <div class="row myrow">
-        <div class="brand col-4 mt-sm txt-c">
-          <span class="c-white large-size fw-b">ZTEAM</span><br />
-          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
-          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
-        </div>
-        <div class="col-3 mt-sm">
-          <span class="c-white medium-size">Learn More</span><br />
-          <ul class="pt-xs">
-            <li><a>About Us</a></li>
-            <li><a>Terms & Condition</a></li>
-            <li><a>Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="col-3 c-white mt-sm">
-          <span class="c-white medium-size">Follow Us</span><br />
-          <ul class="pt-xs">
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-          </ul>
-        </div>
-        <div class="col-2 c-white mt-sm">
-          <span class="c-white medium-size">Orther Site</span><br />
-          <ul class="pt-xs">
-            <li><a>PlayStation</a></li>
-            <li><a>ZForum</a></li>
-            <li><a>ZRealms</a></li>
-          </ul>
-        </div>
+  <div class="footer bg-d2">
+    <div class="row myrow">
+      <div class="brand col-4 mt-sm txt-c">
+        <span class="c-white large-size fw-b">ZTEAM</span><br />
+        <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+        <span class="c-dark-2 small-size">Hotline: 0777888999</span>
       </div>
-      <div class="row myrow">
-        <div class="col-12 txt-c c-dark-1">
-          © 2020 Copyright: zteamgameheaven.com
-        </div>
+      <div class="col-3 mt-sm">
+        <span class="c-white medium-size">Learn More</span><br />
+        <ul class="pt-xs">
+          <li><a>About Us</a></li>
+          <li><a>Terms & Condition</a></li>
+          <li><a>Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-3 c-white mt-sm">
+        <span class="c-white medium-size">Follow Us</span><br />
+        <ul class="pt-xs">
+          <li><a>Facebook</a></li>
+          <li><a>Twitter</a></li>
+          <li><a>Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-2 c-white mt-sm">
+        <span class="c-white medium-size">Orther Site</span><br />
+        <ul class="pt-xs">
+          <li><a>PlayStation</a></li>
+          <li><a>ZForum</a></li>
+          <li><a>ZRealms</a></li>
+        </ul>
       </div>
     </div>
+    <div class="row myrow">
+      <div class="col-12 txt-c c-dark-1">
+        © 2020 Copyright: zteamgameheaven.com
+      </div>
+    </div>
+  </div>
 
-    <!-- jquery -->
+  <!-- jquery -->
 
-    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-    <script src="../components/header/script.js"></script>
-    <script src="../components/profile_avatar/script.js"></script>
-    <script src="../components/profile-game/script.js"></script>
-    <script src="../components/profile_infomation/script.js"></script>
+  <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+  <script src="../components/header/script.js"></script>
+  <script src="../components/profile_avatar/script.js"></script>
+  <script src="../components/profile-game/script.js"></script>
+  <script src="../components/profile_infomation/script.js"></script>
 </body>
 
 </html>

@@ -25,12 +25,14 @@ $(document).mouseup(function (event) {
 $(function(){
     $(window).resize(function(){
         var windowSize = $(window).innerWidth();
-        if(windowSize >= 900){
+        if(windowSize > 896){
             $("a .arrow").hide();
             $('#navBar-icon').prop('checked', false);
+            $("#dropdown-son").css('margin-left', $('#dropdown-father').width() + 'px');
         }
         else{
             $("a .arrow").show();
+            $("#dropdown-son").css('margin-left', 0 + 'px');
         }
     });
 });
@@ -41,4 +43,15 @@ $('#navthing input[type="button"][value="Profile"]').click(function(){
 
 $('#navthing input[type="button"][value="Logout"]').click(function(){
     window.location.href='login.html';
+});
+
+$("#dropdown-son").css('margin-left', $('#dropdown-father').width() + 'px');
+
+$(document).hover(function () {
+    var container = $("#Store-menu-hover");
+
+    if (!container.is(event.target) )
+    {
+        container.scrollTop(0);
+    }
 });
