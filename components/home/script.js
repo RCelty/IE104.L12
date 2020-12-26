@@ -92,6 +92,7 @@ const sectionPos = (startPos1, index1) => {
   for (let i = startPos1; i < cardsection.length; i++) {
     cardsection[i].style.display = "none";
   }
+  console.log("a")
   cardsection[index1].style.display = "flex";
 };
 
