@@ -336,7 +336,7 @@ input.larger {
     background-color: rgba(0, 0, 0, .4);
 }
 
-.popup-content {
+.popup .popup-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -344,18 +344,39 @@ input.larger {
     border-radius: 8px;
     width: 40%;
     font-size: 30px;
+    position: relative;
 }
 
-.close {
+.popup .popup-content .close {
     color: #aaaaaa;
-    float: right;
+    position: absolute;
+    top:5px;
+    right:10px;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.popup .popup-content .ok {
+    color: #28a745;
+    position: absolute;
+    bottom:5px;
+    right:10px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.popup .popup-content .close:hover,
+.popup .popup-content .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.popup .popup-content .ok:hover,
+.popup .popup-content .ok:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 11px;
 }

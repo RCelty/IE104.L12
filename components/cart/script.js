@@ -51,7 +51,13 @@ function recalculateCart() {
     });
 
     span.click(function () {
-        modal.hide().delay(500, function(){
+        modal.hide().delay(2000, function(){
+            window.location.href='home.html';
+        });
+    });
+
+    $(".ok").click(function () {
+        modal.hide().delay(2000, function(){
             window.location.href='home.html';
         });
     });
