@@ -25,8 +25,9 @@
         <div class="heading-right c-white">
           <span class="username">
             <div id="navthing">
-              <h2>
-                <a href="#" id="Username"> Đỗ Đình Ngọc </a>
+              <h2><a href="#" id="Username" class="Change-username">
+                  Đỗ Đình Ngọc
+                </a>
                 <span class="medium-size">|</span>
                 <i class="fas fa-shopping-cart large-size">
                   <span class="counter"></span>
@@ -51,38 +52,51 @@
           <label for="navBar-icon" class="navBar-icon">
             <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
           </label>
-          <input type="checkbox" id="navBar-icon" role="button" />
+          <input type="checkbox" id="navBar-icon" role="button">
           <ul class="menu medium-size" id="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li>
-              <a href="#">Work<i class="arrow fw-b"></i></a>
-              <ul class="drop">
-                <li><a href="#">Art</a></li>
-                <li><a href="#">Photography</a></li>
-                <li><a href="#">Audio</a></li>
-                <li><a href="#">Films</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
+              <ul class="drop" id="dropdown-father">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Adventure</a>
+                </li>
+                <li>
+                  <a href="#">RPG</a>
+                </li>
+                <li>
+                  <a href="#">Platformer</a>
+                </li>
+                <li>
+                  <a href="#">Casual</a>
+                </li>
+              </ul>
+              <ul class="drop" id="dropdown-son">
+                <li>
+                  <a href="#"> Indie</a>
+                </li>
+                <li>
+                  <a href="#"> Racing</a>
+                </li>
+                <li>
+                  <a href="#"> Simulation</a>
+                </li>
+                <li>
+                  <a href="#"> Sports</a>
+                </li>
+                <li>
+                  <a href="#"> Strategy</a>
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#">Contact<i class="arrow"></i></a>
-              <ul class="drop">
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Phone</a></li>
-              </ul>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
             <li class="search">
               <form onsubmit="event.preventDefault();" role="search">
                 <label for="search">Search for stuff</label>
-                <input
-                  id="search"
-                  type="search"
-                  placeholder="Search..."
-                  autofocus
-                  required
-                />
-                <button type="submit">
-                  <i class="fas fa-search medium-size c-white"></i>
-                </button>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
               </form>
             </li>
           </ul>
