@@ -1,1557 +1,1588 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>All Game</title>
-        <link rel="icon" href="../images/logo.jpg" />
-        <link rel="stylesheet" href="../asset/reset.css" />
-        <link rel="stylesheet" href="../asset/setup.css" />
-        <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
-        <link rel="stylesheet" href="../components/header/style.css" />
-        <link rel="stylesheet" href="../components/footer/style.css" />
-        <link rel="stylesheet" href="../components/body/style.css" />
-        <link rel="stylesheet" href="../components/shopping-cart/style.css" />
-        <link rel="stylesheet" href="../components/card/style.css" />
-        <link rel="stylesheet" href="../components/section/style.css" />
-        <link rel="stylesheet" href="../components/home/style.css" />
-        <link rel="stylesheet" href="../components/pagination/style.css"/>
-        <link rel="stylesheet" href="../components/AllGame/allgame.css"/>
-    </head>
-    <body >
-        <!--header-->
-        <div class="header bg-d2">
-            <div class="heading c-w">
-              <!-- <span class="logo"><img src="" alt="logo" /></span> -->
-              <div class="heading-right c-white">
-                <span class="username">
-                  <div id="navthing">
-                    <h2>
-                      <a href="#" id="Username"> Đỗ Đình Ngọc </a>
-                      <span class="medium-size">|</span>
-                      <i class="fas fa-shopping-cart large-size">
-                        <span class="counter"></span>
-                      </i>
-                    </h2>
-                    <div class="userdropdown">
-                      <div class="arrow-up small-size"></div>
-                      <div class="formholder">
-                        <fieldset>
-                          <input type="button" value="Profile" />
-                          <input type="button" value="Logout" />
-                        </fieldset>
-                      </div>
-                    </div>
-                  </div>
-                </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo.jpg" />
+    <title>Indie Games</title>
+
+    <!-- bootstrap, css -->
+
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/body/style.css" />
+    <link rel="stylesheet" href="../components/shopping-cart/style.css" />
+    <link rel="stylesheet" href="../components/card/style.css" />
+    <link rel="stylesheet" href="../components/section/style.css" />
+    <link rel="stylesheet" href="../components/home/style.css" />
+    <link rel="stylesheet" href="../components/pagination/style.css" />
+    <link rel="stylesheet" href="../components/AllGame/allgame.css" />
+  </head>
+  <body>
+    <!--header-->
+    <div class="header bg-d2">
+      <div class="heading c-w">
+        <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+        <div class="heading-right c-white">
+          <span class="username">
+            <div id="navthing">
+              <h2>
+                <a href="#" id="Username" class="Change-username">
+                  Đỗ Đình Ngọc
+                </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
+                  <fieldset>
+                    <input type="button" value="Profile" />
+                    <input type="button" value="Logout" />
+                  </fieldset>
+                </div>
               </div>
             </div>
-            <div class="header-nav">
-              <nav class="navigation">
-                <a href="#" class="logo fw-b">Zteam</a>
-                <label for="navBar-icon" class="navBar-icon">
-                  <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
-                </label>
-                <input type="checkbox" id="navBar-icon" role="button" />
-                <ul class="menu medium-size" id="dropdown-menu">
-                  <li><a href="#">Home</a></li>
-                  <li>
-                    <a href="#">Work<i class="arrow fw-b"></i></a>
-                    <ul class="drop">
-                      <li><a href="#">Art</a></li>
-                      <li><a href="#">Photography</a></li>
-                      <li><a href="#">Audio</a></li>
-                      <li><a href="#">Films</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Contact<i class="arrow"></i></a>
-                    <ul class="drop">
-                      <li><a href="#">Email</a></li>
-                      <li><a href="#">Phone</a></li>
-                    </ul>
-                  </li>
-                  <li class="search">
-                    <form onsubmit="event.preventDefault();" role="search">
-                      <label for="search">Search for stuff</label>
-                      <input
-                        id="search"
-                        type="search"
-                        placeholder="Search..."
-                        autofocus
-                        required
-                      />
-                      <button type="submit">
-                        <i class="fas fa-search medium-size c-white"></i>
-                      </button>
-                    </form>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        <!--body-->
-        <!--Sticky shopping cart-->
-        <button id="bottom-shopping-cart">
-          <i class="fas fa-shopping-cart">
-            <span class="counter"></span>
-          </i>
-        </button>
-        <div class="page-body-allgame">
-        <div class="row myrow">
+          </span>
+        </div>
+      </div>
+      <div class="header-nav">
+        <nav class="navigation">
+          <a href="#" class="logo fw-b">Zteam</a>
+          <label for="navBar-icon" class="navBar-icon">
+            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+          </label>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="home.html">Home</a></li>
+            <li id="Store-menu-hover">
+              <a href="store.html">Store<i class="arrow fw-b"></i></a>
+              <ul class="drop" id="dropdown-father">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Adventure</a>
+                </li>
+                <li>
+                  <a href="#">RPG</a>
+                </li>
+                <li>
+                  <a href="#">Platformer</a>
+                </li>
+                <li>
+                  <a href="#">Casual</a>
+                </li>
+              </ul>
+              <ul class="drop" id="dropdown-son">
+                <li>
+                  <a href="GameDetail.html"> Indie</a>
+                </li>
+                <li>
+                  <a href="#"> Racing</a>
+                </li>
+                <li>
+                  <a href="#"> Simulation</a>
+                </li>
+                <li>
+                  <a href="#"> Sports</a>
+                </li>
+                <li>
+                  <a href="#"> Strategy</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--Sticky shopping cart-->
+    <button id="bottom-shopping-cart">
+      <i class="fas fa-shopping-cart">
+        <span class="counter"></span>
+      </i>
+    </button>
+
+    <!--body-->
+    <div class="page-body-allgame">
+      <div class="row myrow">
         <div class="section allgame-section">
-            <div
-              class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
-            >
-              <span>Indie</span>
-            </div>
-            <div class="row myrow ">
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                    alt="Card image cap"
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Indie</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
                     onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Red dead online </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Rockstar Games</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$19.99</del>
-                        <span class="c-white">$4.99</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+                  >
+                    <span> Red dead online </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
                   </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> HUMANKIND™ Digital Deluxe Edition </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">AMPLITUDE Studios</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">17%</span><del>$41.99</del>
-                        <span class="c-white">$34.85</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                    alt="Card image cap"
-                    onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Parkitech </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Texel Raptor</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$10.79</del>
-                        <span class="c-white">$8.09</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Marvel vs. Capcom: Infinite </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Capcom</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$23.23</del>
-                        <span class="c-white">$5.81</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            
-            <div class="row myrow ">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            <div class="row myrow">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row myrow">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row myrow ">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="section allgame-section">
-            <div
-              class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
-            >
-              <span>Indie</span>
-            </div>
-            <div class="row myrow ">
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                    alt="Card image cap"
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
                     onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Red dead online </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Rockstar Games</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$19.99</del>
-                        <span class="c-white">$4.99</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                    alt="Card image cap"
+                  <div
+                    class="mycard-detail"
                     onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> HUMANKIND™ Digital Deluxe Edition </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">AMPLITUDE Studios</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">17%</span><del>$41.99</del>
-                        <span class="c-white">$34.85</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
                   </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                    alt="Card image cap"
-                    onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Parkitech </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Texel Raptor</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$10.79</del>
-                        <span class="c-white">$8.09</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="mycard col-lg-3 col-sm-6">
-                <div class="mycard-inner">
-                  <img
-                    class="mycard-img"
-                    src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                    alt="Card image cap"
-                    onclick="location.href='../pages/GameDetail.html';"
-                  />
-                  <div class="mycard-body">
-                    <div
-                      class="mycard-title"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <span> Marvel vs. Capcom: Infinite </span>
-                    </div>
-                    <div
-                      class="mycard-detail"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    >
-                      <p class="mycard-text">Capcom</p>
-                      <p class="mycard-text fw-b">
-                        <span class="discount">75%</span><del>$23.23</del>
-                        <span class="c-white">$5.81</span>
-                      </p>
-                    </div>
-                    <button class="addbutton">
-                      <span class="fas fa-shopping-cart"> Add to cart</span>
-                    </button>
-                  </div>
-                  <div class="mycard_overlay">
-                    <h2>Added to cart</h2>
-                    <i class="fas fa-check"></i>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
             </div>
-            
-            <div class="row myrow ">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
                   </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
-              
-            <div class="row myrow">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
                   </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
-              <div class="row myrow">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row myrow ">
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Red dead online </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Rockstar Games</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$19.99</del>
-                          <span class="c-white">$4.99</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> HUMANKIND™ Digital Deluxe Edition </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">AMPLITUDE Studios</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">17%</span><del>$41.99</del>
-                          <span class="c-white">$34.85</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Parkitech </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Texel Raptor</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$10.79</del>
-                          <span class="c-white">$8.09</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mycard col-lg-3 col-sm-6">
-                  <div class="mycard-inner">
-                    <img
-                      class="mycard-img"
-                      src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
-                      alt="Card image cap"
-                      onclick="location.href='../pages/GameDetail.html';"
-                    />
-                    <div class="mycard-body">
-                      <div
-                        class="mycard-title"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <span> Marvel vs. Capcom: Infinite </span>
-                      </div>
-                      <div
-                        class="mycard-detail"
-                        onclick="location.href='../pages/GameDetail.html';"
-                      >
-                        <p class="mycard-text">Capcom</p>
-                        <p class="mycard-text fw-b">
-                          <span class="discount">75%</span><del>$23.23</del>
-                          <span class="c-white">$5.81</span>
-                        </p>
-                      </div>
-                      <button class="addbutton">
-                        <span class="fas fa-shopping-cart"> Add to cart</span>
-                      </button>
-                    </div>
-                    <div class="mycard_overlay">
-                      <h2>Added to cart</h2>
-                      <i class="fas fa-check"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
-          </div>
-          <!--pagination-->
-              <div class=" row myrow " >
-                <div class="col-lg-12 col-sm-6 ">
-                <div align="center"  >
-                <nav class="pagination " >
-                  <div class="nav-btn prev"></div>
-                  <ul class="nav-pages"></ul>
-                  <div class="nav-btn next"></div>
-                </nav>
+
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
                 </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
                 </div>
               </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--footer-->
-            
+
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section allgame-section">
+          <div
+            class="section-header gap-md bg-b fw-b c-white large-size txt-c txt-upper"
+          >
+            <span>Indie</span>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/rdo-standalone-egs-featuredcarousel-1920x1080-deliverable-1920x1080-676962607.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Red dead online </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Rockstar Games</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$19.99</del>
+                      <span class="c-white">$4.99</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> HUMANKIND™ Digital Deluxe Edition </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">AMPLITUDE Studios</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">17%</span><del>$41.99</del>
+                      <span class="c-white">$34.85</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/1a2e662cd56b6144da973181c7fbe7aa3f6844ee.jpeg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Parkitech </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Texel Raptor</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$10.79</del>
+                      <span class="c-white">$8.09</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mycard col-lg-3 col-sm-6">
+              <div class="mycard-inner">
+                <img
+                  class="mycard-img"
+                  src="../images/6a438281badb6c5f8e5082da236bfab08f40eb32.jpg"
+                  alt="Card image cap"
+                  onclick="location.href='../pages/GameDetail.html';"
+                />
+                <div class="mycard-body">
+                  <div
+                    class="mycard-title"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <span> Marvel vs. Capcom: Infinite </span>
+                  </div>
+                  <div
+                    class="mycard-detail"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  >
+                    <p class="mycard-text">Capcom</p>
+                    <p class="mycard-text fw-b">
+                      <span class="discount">75%</span><del>$23.23</del>
+                      <span class="c-white">$5.81</span>
+                    </p>
+                  </div>
+                  <button class="addbutton">
+                    <span class="fas fa-shopping-cart"> Add to cart</span>
+                  </button>
+                </div>
+                <div class="mycard_overlay">
+                  <h2>Added to cart</h2>
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--pagination-->
+      <div class="row myrow">
+        <div class="col-lg-12 col-sm-6">
+          <div align="center">
+            <nav class="pagination">
+              <div class="nav-btn prev"></div>
+              <ul class="nav-pages"></ul>
+              <div class="nav-btn next"></div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+
     <div class="footer bg-d2">
       <div class="row myrow">
         <div class="brand col-4 mt-sm txt-c">
@@ -1590,12 +1621,14 @@
         </div>
       </div>
     </div>
-          <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
-          <script src="../components/pagination/script.js"></script>
-          <script src="../components/header/script.js"></script>
-          <script src="../components/home/script.js"></script>
-          <script src="../components/shopping-cart/script.js"></script>
-          <script src="../components/banner/script.js"></script>
-          <script src="../components/AllGame/script.js"></script>
-    </body>
+
+    <!-- jquery -->
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../components/pagination/script.js"></script>
+    <script src="../components/header/script.js"></script>
+    <script src="../components/home/script.js"></script>
+    <script src="../components/shopping-cart/script.js"></script>
+    <script src="../components/banner/script.js"></script>
+    <script src="../components/AllGame/script.js"></script>
+  </body>
 </html>

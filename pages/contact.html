@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo.jpg" />
     <title>Contact</title>
 
     <!-- css -->
@@ -25,7 +26,8 @@
         <div class="heading-right c-white">
           <span class="username">
             <div id="navthing">
-              <h2><a href="#" id="Username" class="Change-username">
+              <h2>
+                <a href="#" id="Username" class="Change-username">
                   Đỗ Đình Ngọc
                 </a>
                 <span class="medium-size">|</span>
@@ -52,10 +54,11 @@
           <label for="navBar-icon" class="navBar-icon">
             <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
           </label>
-          <input type="checkbox" id="navBar-icon" role="button">
+          <input type="checkbox" id="navBar-icon" role="button" />
           <ul class="menu medium-size" id="dropdown-menu">
             <li><a href="home.html">Home</a></li>
-            <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
+            <li id="Store-menu-hover">
+              <a href="store.html">Store<i class="arrow fw-b"></i></a>
               <ul class="drop" id="dropdown-father">
                 <li>
                   <a href="#">Action</a>
@@ -95,8 +98,16 @@
             <li class="search">
               <form onsubmit="event.preventDefault();" role="search">
                 <label for="search">Search for stuff</label>
-                <input id="search" type="search" placeholder="Search..." autofocus required />
-                <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
               </form>
             </li>
           </ul>

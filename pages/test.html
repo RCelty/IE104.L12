@@ -198,44 +198,97 @@
     <script src="./JQuery/jquery.js"></script>
   </head>
   <body>
-    <header>
-      <ul>
-        <i class="fas fa-shopping-cart">
-          <span class="counter"></span>
-        </i>
-      </ul>
-    </header>
-    <div class="row">
-      <div class="product--blue">
-        <div class="product_inner">
-          <img src="./images/91ZmgFvglpL.png" width="300" />
-          <p>Nike Air (Women)</p>
-          <p>Size 7</p>
-          <p>Price £199.99</p>
-          <button>
-            <span class="fas fa-shopping-cart"></span> Add to basket
-          </button>
-        </div>
-        <div class="mycard_overlay">
-          <h2>Added to basket</h2>
-          <i class="fas fa-check"></i>
+    <div class="header bg-d2">
+      <div class="heading c-w">
+        <div class="heading-right c-white">
+          <span class="username">
+            <div id="navthing">
+              <h2>
+                <a href="#" id="Username" class="Change-username">
+                  Đỗ Đình Ngọc
+                </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
+                  <fieldset>
+                    <input type="button" value="Profile" />
+                    <input type="button" value="Logout" />
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </span>
         </div>
       </div>
-      <div class="product--orange">
-        <div class="product_inner">
-          <img
-            src="http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png"
-            width="300"
-          />
-          <p>Nike Air (Men)</p>
-          <p>Size 10</p>
-          <p>Price £99.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="mycard_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
+      <div class="header-nav">
+        <nav class="navigation">
+          <a href="#" class="logo fw-b">Zteam</a>
+          <label for="navBar-icon" class="navBar-icon">
+            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+          </label>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="home.html">Home</a></li>
+            <li id="Store-menu-hover">
+              <a href="store.html">Store<i class="arrow fw-b"></i></a>
+              <ul class="drop" id="dropdown-father">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Adventure</a>
+                </li>
+                <li>
+                  <a href="#">RPG</a>
+                </li>
+                <li>
+                  <a href="#">Platformer</a>
+                </li>
+                <li>
+                  <a href="#">Casual</a>
+                </li>
+              </ul>
+              <ul class="drop" id="dropdown-son">
+                <li>
+                  <a href="GameDetail.html"> Indie</a>
+                </li>
+                <li>
+                  <a href="#"> Racing</a>
+                </li>
+                <li>
+                  <a href="#"> Simulation</a>
+                </li>
+                <li>
+                  <a href="#"> Sports</a>
+                </li>
+                <li>
+                  <a href="#"> Strategy</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </body>
