@@ -36,7 +36,7 @@
 /* Hovering over list item in vertical bar */
 .slidemenu ul li:hover a,
 .slidemenu ul li:hover span {
-    color: yellow;
+    color: #28A745;
 }
 
 /* Flyout menu for each item in menu bar */
@@ -71,7 +71,7 @@
 /* Hover and active states in flyout menu */
 .slidemenu ul li ul li a:hover,
 .slidemenu ul li ul li a:active {
-    color: yellow;
+    color: #28A745;
 }
 li a
 {
