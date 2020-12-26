@@ -40,6 +40,27 @@ function recalculateCart() {
         }
         $('.totals-value').fadeIn(fadeTime);
     });
+
+    // Popup
+    var modal = $('.popup');
+    var btn = $('.checkout');
+    var span = $('.close');
+
+    btn.click(function () {
+        modal.show();
+    });
+
+    span.click(function () {
+        modal.hide().delay(500, function(){
+            window.location.href='home.html';
+        });
+    });
+
+    // $(window).on('click', function (e) {
+    //     if ($(e.target).is('.popup')) {
+    //         modal.hide();
+    //     }
+    // });
 }
 $(function () {
 

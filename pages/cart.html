@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../components/footer/style.css" />
     <link rel="stylesheet" href="../components/body/style.css" />
     <link rel="stylesheet" href="../components/cart/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -33,78 +35,79 @@
                             </a>
                             <span class="medium-size">|</span>
                             <i class="fas fa-shopping-cart large-size"">
-                                <span class="counter"></span>
-                            </i>
-                        </h2>
-                        <div class="userdropdown">
-                            <div class="arrow-up small-size"></div>
-                            <div class="formholder">
-                                <fieldset>
-                                    <input type="button" value="Profile" />
-                                    <input type="button" value="Logout" />
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
+                                <span class=" counter">
                 </span>
+                </i>
+                </h2>
+                <div class="userdropdown">
+                    <div class="arrow-up small-size"></div>
+                    <div class="formholder">
+                        <fieldset>
+                            <input type="button" value="Profile" />
+                            <input type="button" value="Logout" />
+                        </fieldset>
+                    </div>
+                </div>
             </div>
+            </span>
         </div>
-        <div class="header-nav">
-            <nav class="navigation">
-                <a href="#" class="logo fw-b">Zteam</a>
-                <label for="navBar-icon" class="navBar-icon">
-                    <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
-                </label>
-                <input type="checkbox" id="navBar-icon" role="button">
-                <ul class="menu medium-size" id="dropdown-menu">
-                    <li><a href="home.html">Home</a></li>
-                    <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
-                        <ul class="drop" id="dropdown-father">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Adventure</a>
-                            </li>
-                            <li>
-                                <a href="#">RPG</a>
-                            </li>
-                            <li>
-                                <a href="#">Platformer</a>
-                            </li>
-                            <li>
-                                <a href="#">Casual</a>
-                            </li>
-                        </ul>
-                        <ul class="drop" id="dropdown-son">
-                            <li>
-                                <a href="GameDetail.html"> Indie</a>
-                            </li>
-                            <li>
-                                <a href="#"> Racing</a>
-                            </li>
-                            <li>
-                                <a href="#"> Simulation</a>
-                            </li>
-                            <li>
-                                <a href="#"> Sports</a>
-                            </li>
-                            <li>
-                                <a href="#"> Strategy</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="search">
-                        <form onsubmit="event.preventDefault();" role="search">
-                            <label for="search">Search for stuff</label>
-                            <input id="search" type="search" placeholder="Search..." autofocus required />
-                            <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    </div>
+    <div class="header-nav">
+        <nav class="navigation">
+            <a href="#" class="logo fw-b">Zteam</a>
+            <label for="navBar-icon" class="navBar-icon">
+                <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+            </label>
+            <input type="checkbox" id="navBar-icon" role="button">
+            <ul class="menu medium-size" id="dropdown-menu">
+                <li><a href="home.html">Home</a></li>
+                <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
+                    <ul class="drop" id="dropdown-father">
+                        <li>
+                            <a href="#">Action</a>
+                        </li>
+                        <li>
+                            <a href="#">Adventure</a>
+                        </li>
+                        <li>
+                            <a href="#">RPG</a>
+                        </li>
+                        <li>
+                            <a href="#">Platformer</a>
+                        </li>
+                        <li>
+                            <a href="#">Casual</a>
+                        </li>
+                    </ul>
+                    <ul class="drop" id="dropdown-son">
+                        <li>
+                            <a href="GameDetail.html"> Indie</a>
+                        </li>
+                        <li>
+                            <a href="#"> Racing</a>
+                        </li>
+                        <li>
+                            <a href="#"> Simulation</a>
+                        </li>
+                        <li>
+                            <a href="#"> Sports</a>
+                        </li>
+                        <li>
+                            <a href="#"> Strategy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search">
+                    <form onsubmit="event.preventDefault();" role="search">
+                        <label for="search">Search for stuff</label>
+                        <input id="search" type="search" placeholder="Search..." autofocus required />
+                        <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
     </div>
 
     <!-- body -->
@@ -190,6 +193,12 @@
                 </div>
                 <button class="checkout">Checkout</button>
             </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Payment success</p>
         </div>
     </div>
     <!-- footer -->
