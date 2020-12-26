@@ -56,6 +56,11 @@ $(".heading-right .fas.fa-shopping-cart.large-size").click(function(){
     window.location.href='cart.html';
 })
 
+$("#bottom-shopping-cart .fas.fa-shopping-cart").click(function(){
+    window.location.href='cart.html';
+})
+
+
 // $(".navigation").hover(function(){
 //     $("li#Store-menu-hover ul.drop li").mouseout(function () {
 //         $([document.documentElement, document.body]).animate({
@@ -69,3 +74,7 @@ $(".navigation ul.menu li a").each(function() {
         $(this).css("color", "#28a745");
     }
 });
+
+$(".navigation ul.menu li ul.drop li a").click(function(){
+    window.location.href='AllGame.html';
+})
