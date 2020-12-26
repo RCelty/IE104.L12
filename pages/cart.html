@@ -32,7 +32,7 @@
                                 Đỗ Đình Ngọc
                             </a>
                             <span class="medium-size">|</span>
-                            <i class="fas fa-shopping-cart large-size">
+                            <i class="fas fa-shopping-cart large-size"">
                                 <span class="counter"></span>
                             </i>
                         </h2>
@@ -51,27 +51,50 @@
         </div>
         <div class="header-nav">
             <nav class="navigation">
-                <a href="#" class="logo large-size fw-b">Zteam</a>
+                <a href="#" class="logo fw-b">Zteam</a>
                 <label for="navBar-icon" class="navBar-icon">
                     <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
                 </label>
                 <input type="checkbox" id="navBar-icon" role="button">
                 <ul class="menu medium-size" id="dropdown-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work<i class="arrow fw-b"></i></a>
-                        <ul class="drop">
-                            <li><a href="#">Art</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">Films</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
+                        <ul class="drop" id="dropdown-father">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Adventure</a>
+                            </li>
+                            <li>
+                                <a href="#">RPG</a>
+                            </li>
+                            <li>
+                                <a href="#">Platformer</a>
+                            </li>
+                            <li>
+                                <a href="#">Casual</a>
+                            </li>
+                        </ul>
+                        <ul class="drop" id="dropdown-son">
+                            <li>
+                                <a href="GameDetail.html"> Indie</a>
+                            </li>
+                            <li>
+                                <a href="#"> Racing</a>
+                            </li>
+                            <li>
+                                <a href="#"> Simulation</a>
+                            </li>
+                            <li>
+                                <a href="#"> Sports</a>
+                            </li>
+                            <li>
+                                <a href="#"> Strategy</a>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact<i class="arrow"></i></a>
-                        <ul class="drop">
-                            <li><a href="#">Email</a></li>
-                            <li><a href="#">Phone</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li class="search">
                         <form onsubmit="event.preventDefault();" role="search">
                             <label for="search">Search for stuff</label>
@@ -89,90 +112,83 @@
     <div class="body">
         <div class="cart">
             <div class="column-labels">
-                <label class="product-image">Mã đơn hàng: SF5E7FIE6</label>
+                <label class="product-image">Code orders: SF5E7FIE6</label>
                 <label class="product-details">Game</label>
-                <label class="product-price">Giá</label>
-                <label class="product-removal">Xóa</label>
-                <label class="product-line-price">Tổng</label>
+                <label class="product-removal">Delete</label>
+                <label class="product-line-price">Price</label>
             </div>
 
             <div class="product">
                 <div class="product-image">
                     <input type="checkbox" class="larger product-check" />
-                    <img src="../images/CSGO.jpg" />
+                    <img src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg" />
                 </div>
                 <div class="product-details">
                     <div class="product-title">
-                        Tên bánh
+                        <div id="truncateLongTexts">Tom Clancy's Rainbow Six Siege</div>
                         <p class="product-description">
-                            Mô tả.. ,<br />
-                            Mã hàng
+                            Respawn Entertainment
                         </p>
                     </div>
                 </div>
-                <div class="product-price">10000</div>
                 <div class="product-removal">
                     <button class="remove-product">x</button>
                 </div>
-                <div class="product-line-price">10000</div>
+                <div class="product-line-price">14.27</div>
             </div>
 
             <div class="product">
                 <div class="product-image">
                     <input type="checkbox" class="larger product-check" />
-                    <img src="../images/CSGO.jpg" />
+                    <img src="../images/RDR2.png" />
                 </div>
                 <div class="product-details">
                     <div class="product-title">
-                        Tên bánh
+                        <div id="truncateLongTexts">Red Dead Redemption 2 </div>
                         <p class="product-description">
-                            Mô tả.. ,<br />
-                            Mã hàng
+                            Rockstar Games
                         </p>
                     </div>
                 </div>
-                <div class="product-price">10000</div>
                 <div class="product-removal">
                     <button class="remove-product">x</button>
                 </div>
-                <div class="product-line-price">10000</div>
+                <div class="product-line-price">19.85</div>
             </div>
 
             <div class="product">
                 <div class="product-image">
                     <input type="checkbox" class="larger product-check" />
-                    <img src="../images/CSGO.jpg" />
+                    <img src="../images/wallpapersden.com_humankind-game-4k-8k_1600x1200.jpg" />
                 </div>
                 <div class="product-details">
                     <div class="product-title">
-                        Tên bánh
+                        <div id="truncateLongTexts">HUMANKIND™ Digital Deluxe Edition</div>
                         <p class="product-description">
-                            Mô tả.. ,<br />
-                            Mã hàng
+                            AMPLITUDE Studios
                         </p>
                     </div>
                 </div>
-                <div class="product-price">10000</div>
                 <div class="product-removal">
                     <button class="remove-product">x</button>
                 </div>
-                <div class="product-line-price">10000</div>
+                <div class="product-line-price">34.85</div>
             </div>
 
             <div class="totals">
                 <div class="totals-item">
-                    <label>Thành tiền</label>
+                    <label>Total</label>
                     <div class="totals-value" id="cart-subtotal">0</div>
                 </div>
                 <div class="totals-item">
-                    <label>Phí vận chuyển</label>
-                    <div class="totals-value" id="cart-shipping">0</div>
+                    <label>Coupon</label>
+                    <div class="totals-value" id="cart-coupon">0</div>
                 </div>
                 <div class="totals-item" style="color: red; font-size: 20pt">
-                    <label>Tổng tiền</label>
+                    <label>Total amount</label>
                     <div class="totals-value" id="cart-total">0</div>
                 </div>
-                <button class="checkout">Đặt hàng</button>
+                <button class="checkout">Checkout</button>
             </div>
         </div>
     </div>

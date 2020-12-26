@@ -38,6 +38,7 @@
   font-size: 36px;
   float: left;
   padding-left: 30px;
+  z-index: 99;
   text-transform: uppercase;
 }
 
@@ -366,4 +367,8 @@
   padding: 0;
   border: 0;
   overflow: hidden;
+}
+
+.fas.fa-shopping-cart.large-size{
+  cursor: pointer;
 }

@@ -1,6 +1,6 @@
 $(".product-check").prop('checked', true);
 // /* Set rates + misc */
-var shippingRate = 15000;
+var couponRate = 1.99;
 var fadeTime = 300;
 /* Assign actions */
 
@@ -25,14 +25,14 @@ function recalculateCart() {
     });
 
     /* Calculate totals */
-    var shipping = (subtotal > 0 ? shippingRate : 0);
-    var total = subtotal + shipping;
+    var coupon = (subtotal > 0 ? couponRate : 0);
+    var total = subtotal - coupon;
 
     /* Update totals display */
     $('.totals-value').fadeOut(fadeTime, function () {
-        $('#cart-subtotal').html(subtotal.toFixed(0));
-        $('#cart-shipping').html(shipping.toFixed(0));
-        $('#cart-total').html(total.toFixed(0));
+        $('#cart-subtotal').html(subtotal.toFixed(2));
+        $('#cart-coupon').html(coupon.toFixed(2));
+        $('#cart-total').html(total.toFixed(2));
         if (total == 0) {
             $('.checkout').fadeOut(fadeTime);
         } else {
