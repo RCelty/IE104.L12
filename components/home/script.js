@@ -39,9 +39,7 @@ const startAutoSlide = () => {
 
 startAutoSlide(); // Start the slideshow
 
-// Shopping-cart effect
 
-$(function() {
 
   "use strict"
   
@@ -77,7 +75,6 @@ $(function() {
     //   }).dequeue();
     // });
   });
-});
 
 // Multislider cards
 

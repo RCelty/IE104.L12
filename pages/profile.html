@@ -1,288 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/DAL-Mayuri.jpg" />
+    <title>Zteam</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../images/DAL-Mayuri.jpg">
-  <title>Zteam</title>
+    <!-- bootstrap, css -->
 
-  <!-- bootstrap, css -->
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/body/style.css" />
+    <link rel="stylesheet" href="../components/card/style.css" />
+    <link rel="stylesheet" href="../components/section/style.css" />
+    <link rel="stylesheet" href="../components/profile_avatar/style.css" />
+    <link rel="stylesheet" href="../components/profile_infomation/style.css" />
+    <link rel="stylesheet" href="../components/profile-game/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="../asset/reset.css" />
-  <link rel="stylesheet" href="../asset/setup.css" />
-  <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
-  <link rel="stylesheet" href="../components/header/style.css" />
-  <link rel="stylesheet" href="../components/footer/style.css" />
-  <link rel="stylesheet" href="../components/body/style.css" />
-  <link rel="stylesheet" href="../components/card/style.css" />
-  <link rel="stylesheet" href="../components/section/style.css" />
-  <link rel="stylesheet" href="../components/profile_avatar/style.css">
-  <link rel="stylesheet" href="../components/profile_infomation/style.css">
-  <link rel="stylesheet" href="../components/profile-game/style.css">
-</head>
+  <body>
+    <!-- header -->
 
-<body>
-  <!-- header -->
+    <div class="header bg-d2">
+      <div class="heading c-w">
+        <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+        <div class="heading-right c-white">
+          <span class="username">
+            <div id="navthing">
+              <h2>
+                <a href="#" id="Username" class="Change-username">
+                  Đỗ Đình Ngọc
+                </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
+                  <fieldset>
+                    <input type="button" value="Profile" />
+                    <input type="button" value="Logout" />
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="header-nav">
+        <nav class="navigation">
+          <a href="#" class="logo fw-b">Zteam</a>
+          <label for="navBar-icon" class="navBar-icon">
+            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+          </label>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Work<i class="arrow fw-b"></i></a>
+              <ul class="drop">
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Films</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact<i class="arrow"></i></a>
+              <ul class="drop">
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Phone</a></li>
+              </ul>
+            </li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-  <div class="header bg-d2">
-    <div class="heading c-w">
-      <!-- <span class="logo"><img src="" alt="logo" /></span> -->
-      <div class="heading-right c-white">
-        <span class="username">
-          <div id="navthing">
-            <h2><a href="#" id="Username" class="Change-username">
-                Đỗ Đình Ngọc
-              </a>
-              <span class="medium-size">|</span>
-              <i class="fas fa-shopping-cart large-size">
-                <span class="counter"></span>
-              </i>
-            </h2>
-            <div class="userdropdown">
-              <div class="arrow-up small-size"></div>
-              <div class="formholder">
-                <fieldset>
-                  <input type="button" value="Profile"/>
-                  <input type="button" value="Logout"/>
-                </fieldset>
+    <!-- body -->
+
+    <div class="body">
+      <!-- Avatar & info -->
+      <div class="row myrow">
+        <div class="col-lg-4 col-sm-6 txt-c">
+          <div class="has-dflex-center profile-avatar">
+            <div class="lx-row align-stretch">
+              <div class="profile-pic">
+                <div class="pic">
+                  <img
+                    src="../images/EreshkigalAF.png"
+                    id="avatar"
+                    width="4024"
+                    height="6048"
+                    loading="lazy"
+                  />
+                  <a
+                    class="lx-btn"
+                    onclick="$('#change-avatar').trigger('click'); return true;"
+                    ><i class="fas fa-camera-retro"> </i>&nbsp;&nbsp;Change your
+                    profile picture.</a
+                  >
+                  <input type="file" id="change-avatar" />
+                </div>
+                <h1 class="username Change-username">Đỗ Đình Ngọc</h1>
               </div>
             </div>
           </div>
-        </span>
-      </div>
-    </div>
-    <div class="header-nav">
-      <nav class="navigation">
-        <a href="#" class="logo fw-b">Zteam</a>
-        <label for="navBar-icon" class="navBar-icon">
-          <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
-        </label>
-        <input type="checkbox" id="navBar-icon" role="button">
-        <ul class="menu medium-size" id="dropdown-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work<i class="arrow fw-b"></i></a>
-            <ul class="drop">
-              <li><a href="#">Art</a></li>
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Audio</a></li>
-              <li><a href="#">Films</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact<i class="arrow"></i></a>
-            <ul class="drop">
-              <li><a href="#">Email</a></li>
-              <li><a href="#">Phone</a></li>
-            </ul>
-          </li>
-          <li class="search">
-            <form onsubmit="event.preventDefault();" role="search">
-              <label for="search">Search for stuff</label>
-              <input id="search" type="search" placeholder="Search..." autofocus required />
-              <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
-            </form>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <!-- body -->
-
-  <div class="body">
-    <!-- Avatar & info -->
-    <div class="row myrow">
-      <div class="col-lg-4 col-sm-6 txt-c">
-        <div class="has-dflex-center profile-avatar">
-          <div class="lx-row align-stretch">
-            <div class="profile-pic">
-              <div class="pic">
-                <img src="../images/EreshkigalAF.png" id="avatar" width="4024" height="6048" loading="lazy">
-                <a class="lx-btn" onclick="$('#change-avatar').trigger('click'); return true;"><i
-                    class="fas fa-camera-retro">
-                  </i>&nbsp;&nbsp;Change your profile picture.</a>
-                <input type="file" id="change-avatar">
+        </div>
+        <div class="col-lg-8 col-sm-6">
+          <div class="profile-user-info">
+            <div class="profile-info-row">
+              <div class="profile-info-name">Username</div>
+              <div class="profile-info-value">
+                <span class="Change-username" id="default-username"
+                  >Đỗ Đình Ngọc</span
+                >
+                <input type="text" id="change-username" />
               </div>
-              <h1 class="username Change-username">Đỗ Đình Ngọc</h1>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">Email</div>
+              <div class="profile-info-value">
+                <span id="default-email">wanbirosi1@gmail.com</span>
+                <input type="text" id="change-email" />
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">Location</div>
+              <div class="profile-info-value">
+                <i class="fa fa-map-marker-alt c-blue" aria-hidden="true"></i>
+                <span id="default-location">TP.HCM, VIET NAM</span>
+                <input type="text" id="change-location" />
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">Age</div>
+              <div class="profile-info-value">
+                <span id="default-age">20</span>
+                <input type="number" id="change-age" />
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">Joined</div>
+              <div class="profile-info-value">
+                <span>30/06/2019</span>
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">Favourite Games</div>
+              <div class="profile-info-value">
+                <span id="Favourite-Games"></span>
+              </div>
+            </div>
+            <div class="profile-info-row">
+              <div class="profile-info-name">My Games</div>
+              <div class="profile-info-value">
+                <span id="My-Games"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-8 col-sm-6">
-        <div class="profile-user-info">
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Username </div>
-            <div class="profile-info-value">
-              <span class="Change-username" id="default-username">Đỗ Đình Ngọc</span>
-              <input type="text" id="change-username">
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Email </div>
-            <div class="profile-info-value">
-              <span id="default-email">wanbirosi1@gmail.com</span>
-              <input type="text" id="change-email">
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Location </div>
-            <div class="profile-info-value">
-              <i class="fa fa-map-marker-alt c-blue" aria-hidden="true"></i>
-              <span id="default-location">TP.HCM, VIET NAM</span>
-              <input type="text" id="change-location">
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Age </div>
-            <div class="profile-info-value">
-              <span id="default-age">20</span>
-              <input type="number" id="change-age">
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Joined </div>
-            <div class="profile-info-value">
-              <span>30/06/2019</span>
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> Favourite Games </div>
-            <div class="profile-info-value">
-              <span id="Favourite-Games"></span>
-            </div>
-          </div>
-          <div class="profile-info-row">
-            <div class="profile-info-name"> My Games </div>
-            <div class="profile-info-value">
-              <span id="My-Games" ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Favourite Games -->
-    <div class="favourite limit-items">
-      <!-- Begin controller - must precede .items -->
-      <input type='checkbox' id='show-all-favourite'>
-      <label for='show-all-favourite' class='buttonupdown-show1' onclick="myFunction('myDIV1');"><i class="fas fa-chevron-down c-white medium-size"></i></label>
-      <label for='show-all-favourite' class='buttonupdown-hide1' onclick="myFunction('myDIV1');"><i class="fas fa-chevron-up c-white medium-size"></i></label>
-      <div class="cardgroup">
-        <div class="cardgroup-header large-size pl-sm fw-b">
-          <p><i class="fas fa-heart"></i> Favourite Games</p>
-        </div>
-        <div class="section">
-          <div class="row myrow">
-            <div id= "like-1" class="mycard col-lg-3 col-sm-6">
-              <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/F1.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
-                <div class="mycard-body">
-                  <div
-                    class="mycard-title"
+      <!-- Favourite Games -->
+      <div class="favourite limit-items">
+        <!-- Begin controller - must precede .items -->
+        <input type="checkbox" id="show-all-favourite" />
+        <label
+          for="show-all-favourite"
+          class="buttonupdown-show1"
+          onclick="myFunction('myDIV1');"
+          ><i class="fas fa-chevron-down c-white medium-size"></i
+        ></label>
+        <label
+          for="show-all-favourite"
+          class="buttonupdown-hide1"
+          onclick="myFunction('myDIV1');"
+          ><i class="fas fa-chevron-up c-white medium-size"></i
+        ></label>
+        <div class="cardgroup">
+          <div class="cardgroup-header large-size pl-sm fw-b">
+            <p><i class="fas fa-heart"></i> Favourite Games</p>
+          </div>
+          <div class="section">
+            <div class="row myrow">
+              <div id="like-1" class="mycard col-lg-3 col-sm-6">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/F1.png"
+                    alt="Card image cap"
                     onclick="location.href='./test.html';"
-                  >
-                    <span> F1® 2020 </span>
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='./test.html';"
+                    >
+                      <span> F1® 2020 </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='./test.html';"
+                    >
+                      <p class="mycard-text">Codemasters</p>
+                    </div>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
-                    <p class="mycard-text">Codemasters</p>
+                  <div>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-1'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
-                </div>
-                <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-1'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-            </div>
-            <div id= "like-2" class="mycard col-lg-3 col-sm-6">
-              <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/Cyberpunk2077.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
-                <div class="mycard-body">
-                  <div
-                    class="mycard-title"
+              <div id="like-2" class="mycard col-lg-3 col-sm-6">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Cyberpunk2077.png"
+                    alt="Card image cap"
                     onclick="location.href='./test.html';"
-                  >
-                    <span> Cyberpunk 2077 </span>
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='./test.html';"
+                    >
+                      <span> Cyberpunk 2077 </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='./test.html';"
+                    >
+                      <p class="mycard-text">CD PROJEKT RED</p>
+                    </div>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
-                    <p class="mycard-text">CD PROJEKT RED</p>
+                  <div>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-2'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
-                </div>
-                <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-2'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-            </div>
-            <div id= "like-3" class="mycard col-lg-3 col-sm-6">
-              <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/Truck.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
-                <div class="mycard-body">
-                  <div
-                    class="mycard-title"
+              <div id="like-3" class="mycard col-lg-3 col-sm-6">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Truck.png"
+                    alt="Card image cap"
                     onclick="location.href='./test.html';"
-                  >
-                    <span> American Truck Simulator </span>
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='./test.html';"
+                    >
+                      <span> American Truck Simulator </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='./test.html';"
+                    >
+                      <p class="mycard-text">SCS Software</p>
+                    </div>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
-                    <p class="mycard-text">SCS Software</p>
+                  <div>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-3'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
-                </div>
-                <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-3'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-            </div>
-            <div id= "like-4" class="mycard col-lg-3 col-sm-6">
-              <div class="mycard-inner">
-                <img
-                  class="mycard-img"
-                  src="../images/FallGuy.png"
-                  alt="Card image cap"
-                  onclick="location.href='./test.html';"
-                />
-                <div class="mycard-body">
-                  <div
-                    class="mycard-title"
+              <div id="like-4" class="mycard col-lg-3 col-sm-6">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/FallGuy.png"
+                    alt="Card image cap"
                     onclick="location.href='./test.html';"
-                  >
-                    <span> Fall Guys: Ultimate Knockout </span>
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='./test.html';"
+                    >
+                      <span> Fall Guys: Ultimate Knockout </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='./test.html';"
+                    >
+                      <p class="mycard-text">Mediatonic</p>
+                    </div>
                   </div>
-                  <div
-                    class="mycard-detail"
-                    onclick="location.href='./test.html';"
-                  >
-                    <p class="mycard-text">Mediatonic</p>
+                  <div>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-4'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
-                </div>
-                <div>
-                  <i class="fas fa-heart large-size like-game" onclick="dislike('like-4'); $(this).css('color', 'white')"></i>
                 </div>
               </div>
-            </div>
-              <div id= "like-5" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-5" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -305,11 +348,14 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-5'); $(this).css('color', 'white')"></i>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-5'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
-              <div id= "like-6" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-6" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -332,11 +378,14 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-6'); $(this).css('color', 'white')"></i>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-6'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
-              <div id= "like-7" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-7" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -359,11 +408,14 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-7'); $(this).css('color', 'white')"></i>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-7'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
-              <div id= "like-8" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-8" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -386,11 +438,14 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-8'); $(this).css('color', 'white')"></i>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-8'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
-              <div id= "like-9" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-9" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -413,11 +468,14 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-9'); $(this).css('color', 'white')"></i>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-9'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
-              <div id= "like-10" class="mycard col-lg-3 col-sm-6 myDIV1">
+              <div id="like-10" class="mycard col-lg-3 col-sm-6 myDIV1">
                 <div class="mycard-inner">
                   <img
                     class="mycard-img"
@@ -440,142 +498,10 @@
                     </div>
                   </div>
                   <div>
-                    <i class="fas fa-heart large-size like-game" onclick="dislike('like-10'); $(this).css('color', 'white')"></i>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- My game -->
-    <div class="mygame limit-items">
-      <!-- Begin controller - must precede .items -->
-      <input type='checkbox' id='show-all-mygame'>
-      <label for='show-all-mygame' class='buttonupdown-show2' onclick="myFunction('myDIV2');"><i class="fas fa-chevron-down c-white medium-size"></i></label>
-      <label for='show-all-mygame' class='buttonupdown-hide2' onclick="myFunction('myDIV2');"><i class="fas fa-chevron-up c-white medium-size"></i></label>
-      <div class="cardgroup">
-        <div class="cardgroup-header large-size pl-sm fw-b">
-          <p><i class="fas fa-gamepad"></i> My Games</p>
-        </div>
-        <div class="cardgroup-body">
-          <div class="row myrow cardgroup-section">
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img" src="../images/ApexLegend.jpg" alt="Card image cap"
-                  onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span>Apex Legend</span>
-                    </div>
-                    <p class="cardgroup-card-text">Respawn Entertainment</p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img" src="../images/CSGO.jpg" alt="Card image cap"
-                  onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span> Counter-Strike: Global Offensive </span>
-                    </div>
-                    <p class="cardgroup-card-text">Valve</p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img" src="../images/Dota.png" alt="Card image cap"
-                  onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span> Dota 2 </span>
-                    </div>
-                    <p class="cardgroup-card-text">Valve</p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row myrow cardgroup-section myDIV2">
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img"
-                  src="../images/egs-cavestory-nicalisincstudiopixel-s1-2560x1440-633664379.jpg" alt="Card image cap"
-                  onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span>Cave Story+</span>
-                    </div>
-                    <p class="cardgroup-card-text">
-                      Nicalis, Inc./Studio Pixel
-                    </p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img" src="../images/poe_752x430.png" alt="Card image cap"
-                  onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span>Pillars of Eternity - Definitive Edition</span>
-                    </div>
-                    <p class="cardgroup-card-text">Obsidian Entertainment</p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cardgroup-card col-lg-4 col-sm-12">
-              <div class="cardgroup-card-inner">
-                <img class="cardgroup-card-img"
-                  src="../images/egs-tyrannygoldedition-obsidianentertainment-g1a-00-1920x1080-588867121.webp"
-                  alt="Card image cap" onclick="location.href='./test.html';" />
-                <div class="cardgroup-card-body row myrow">
-                  <div class="col-7">
-                    <div class="cardgroup-card-title">
-                      <span>Tyranny - Gold Edition</span>
-                    </div>
-                    <p class="cardgroup-card-text">Obsidian Entertainment</p>
-                  </div>
-                  <div class="col-5">
-                    <button>
-                      <i class="fas fa-gamepad fa-2x"></i>
-                    </button>
+                    <i
+                      class="fas fa-heart large-size like-game"
+                      onclick="dislike('like-10'); $(this).css('color', 'white')"
+                    ></i>
                   </div>
                 </div>
               </div>
@@ -583,8 +509,175 @@
           </div>
         </div>
       </div>
+      <!-- My game -->
+      <div class="mygame limit-items">
+        <!-- Begin controller - must precede .items -->
+        <input type="checkbox" id="show-all-mygame" />
+        <label
+          for="show-all-mygame"
+          class="buttonupdown-show2"
+          onclick="myFunction('myDIV2');"
+          ><i class="fas fa-chevron-down c-white medium-size"></i
+        ></label>
+        <label
+          for="show-all-mygame"
+          class="buttonupdown-hide2"
+          onclick="myFunction('myDIV2');"
+          ><i class="fas fa-chevron-up c-white medium-size"></i
+        ></label>
+        <div class="cardgroup">
+          <div class="cardgroup-header large-size pl-sm fw-b">
+            <p><i class="fas fa-gamepad"></i> My Games</p>
+          </div>
+          <div class="cardgroup-body">
+            <div class="row myrow cardgroup-section">
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/ApexLegend.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>Apex Legend</span>
+                      </div>
+                      <p class="cardgroup-card-text">Respawn Entertainment</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/CSGO.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span> Counter-Strike: Global Offensive </span>
+                      </div>
+                      <p class="cardgroup-card-text">Valve</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/Dota.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span> Dota 2 </span>
+                      </div>
+                      <p class="cardgroup-card-text">Valve</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row myrow cardgroup-section myDIV2">
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/egs-cavestory-nicalisincstudiopixel-s1-2560x1440-633664379.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>Cave Story+</span>
+                      </div>
+                      <p class="cardgroup-card-text">
+                        Nicalis, Inc./Studio Pixel
+                      </p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/poe_752x430.png"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>Pillars of Eternity - Definitive Edition</span>
+                      </div>
+                      <p class="cardgroup-card-text">Obsidian Entertainment</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardgroup-card col-lg-4 col-sm-12">
+                <div class="cardgroup-card-inner">
+                  <img
+                    class="cardgroup-card-img"
+                    src="../images/egs-tyrannygoldedition-obsidianentertainment-g1a-00-1920x1080-588867121.webp"
+                    alt="Card image cap"
+                    onclick="location.href='./test.html';"
+                  />
+                  <div class="cardgroup-card-body row myrow">
+                    <div class="col-7">
+                      <div class="cardgroup-card-title">
+                        <span>Tyranny - Gold Edition</span>
+                      </div>
+                      <p class="cardgroup-card-text">Obsidian Entertainment</p>
+                    </div>
+                    <div class="col-5">
+                      <button>
+                        <i class="fas fa-gamepad fa-2x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
     <!-- footer -->
 
     <div class="footer bg-d2">
@@ -611,7 +704,7 @@
           </ul>
         </div>
         <div class="col-2 c-white mt-sm">
-          <span class="c-white medium-size">Orther Site</span><br />
+          <span class="c-white medium-size">Other Site</span><br />
           <ul class="pt-xs">
             <li><a>PlayStation</a></li>
             <li><a>ZForum</a></li>
@@ -633,6 +726,5 @@
     <script src="../components/profile_avatar/script.js"></script>
     <script src="../components/profile-game/script.js"></script>
     <script src="../components/profile_infomation/script.js"></script>
-</body>
-
+  </body>
 </html>
