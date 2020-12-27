@@ -102,3 +102,15 @@
             transform: scale(1);
   }
 }
+.addbutton
+{
+  background-color: #292929;
+  border: none;
+  color: #CCCCCC;
+  outline: #292929;
+}
+.addbutton i:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

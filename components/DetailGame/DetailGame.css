@@ -134,19 +134,7 @@ img
 {
   border-radius: 5px;
 }
-.addbutton
-{
-  background-color: #292929;
-  border: none;
-  color: #CCCCCC;
-  outline: #292929;
-}
-.addbutton:hover
-{
-   cursor: pointer; 
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
+
 .title-img
 {
   padding-top: 10px;
@@ -157,14 +145,4 @@ img
   border:1px solid #191C22;
   margin-left: -15px;
   padding-left: 20px;
-}
-.gallery
-{
-  background-color: #313131;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 4px;
-  border:1px solid #191C22;
 }
